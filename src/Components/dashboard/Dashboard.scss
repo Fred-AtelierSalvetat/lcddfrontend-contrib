@@ -1,0 +1,130 @@
+$navbarwidth: 80px;
+$navbartopmargin: 46px;
+$cardheight: calc(1.875rem + 1.5rem + 2.375rem); // SVG + 3 * padding + 2 txt lines
+$cardwidth: calc(#{$navbarwidth} - 2px);
+
+#lcdd-dashboard {
+    p {
+        margin: 0;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+
+    display: flex;
+    height: calc(100vh - 72px);
+
+    #lcdd-dashboard-navbar {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-width: $navbarwidth;
+        max-width: $navbarwidth;
+        width: $navbarwidth;
+        height: 100%;
+
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: $navbartopmargin 1px 0 1px;
+        background-color: var(--dark-primary);
+
+        > input {
+            display: none;
+        }
+        > label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: $cardwidth;
+            max-width: $cardwidth;
+            width: $cardwidth;
+            height: $cardheight;
+
+            cursor: pointer;
+            margin: 0.5rem 0;
+
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            p {
+                font-weight: 400;
+                font-size: small;
+                font-size: 13px;
+                line-height: 19px;
+                color: var(--white);
+                text-align: center;
+                pointer-events: none;
+            }
+            svg {
+                width: 1.875rem;
+                height: 1.875rem;
+                fill: var(--white);
+                padding-bottom: 0.5rem;
+            }
+        }
+        > input:checked + label {
+            color: var(--dark-primary);
+            cursor: default;
+            &:hover {
+                transform: none;
+            }
+            p {
+                color: var(--dark-primary);
+            }
+            svg {
+                fill: var(--dark-primary);
+            }
+        }
+
+        .selection-sliding-background {
+            display: none;
+            min-width: $cardwidth;
+            max-width: $cardwidth;
+            width: $cardwidth;
+            height: $cardheight;
+            min-height: $cardheight;
+            max-height: $cardheight;
+            transition: top 0.2s ease-in-out;
+            border-radius: 2px;
+        }
+        input:checked ~ .selection-sliding-background {
+            display: block;
+            position: absolute;
+            z-index: -1;
+
+            background-color: var(--white);
+            top: 0;
+        }
+        input:first-of-type:checked ~ .selection-sliding-background {
+            top: calc(#{$navbartopmargin} + 0.5rem);
+        }
+        input:nth-of-type(2):checked ~ .selection-sliding-background {
+            top: calc(#{$navbartopmargin} + 0.5rem + (#{$cardheight} + 1rem));
+        }
+        input:nth-of-type(3):checked ~ .selection-sliding-background {
+            top: calc(#{$navbartopmargin} + 0.5rem + 2 * (#{$cardheight} + 1rem));
+        }
+        input:nth-of-type(4):checked ~ .selection-sliding-background {
+            top: calc(#{$navbartopmargin} + 0.5rem + 3 * (#{$cardheight} + 1rem));
+        }
+        input:nth-of-type(5):checked ~ .selection-sliding-background {
+            top: calc(#{$navbartopmargin} + 0.5rem + 3 * (#{$cardheight} + 1rem));
+        }
+        input:nth-of-type(6):checked ~ .selection-sliding-background {
+            top: calc(#{$navbartopmargin} + 0.5rem + 3 * (#{$cardheight} + 1rem));
+        }
+    }
+
+    #lcdd-dashboard-page {
+        height: 100%;
+        width: calc(100% - #{$navbarwidth});
+        padding: 0 36px;
+        background: linear-gradient(180deg, #ffffff 0%, #ffffff 23.96%, #f2f2f2 100%);
+        overflow: auto;
+    }
+}

@@ -1,0 +1,198 @@
+@import 'bootstrap';
+
+$col-spacing: 1.875rem;
+$row-input-spacing: 2rem;
+
+#workshop-form {
+    form {
+        margin: 0 calc(-1 * #{$col-spacing} / 2);
+    }
+
+    h1 {
+        text-align: left;
+        color: var(--primary);
+        font-style: normal;
+        font-weight: 350;
+        font-size: 32px;
+        line-height: 33px;
+    }
+
+    label,
+    span,
+    p,
+    input,
+    input::placeholder,
+    textarea,
+    textarea::placeholder,
+    .select__input,
+    .select-invalid__input,
+    .select-valid__input,
+    [class*='placeholder'] {
+        //p police
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+        letter-spacing: 0;
+        text-align: left;
+    }
+
+    a {
+        //Link police
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+        letter-spacing: 0;
+        text-decoration: underline;
+        color: var(--link);
+        svg {
+            margin-right: 0.42rem;
+        }
+    }
+    .workshopUploads {
+        .form-row {
+            height: 100%;
+            min-height: max-content;
+            margin: 0 calc(-1 * #{$col-spacing} / 2);
+
+            .rightborder {
+                border-right: 0.063rem solid rgb(206, 212, 218);
+            }
+            .dropzone {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                svg {
+                    flex-shrink: 0;
+                }
+                p,
+                a {
+                    text-align: center;
+                    margin-top: 1rem;
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
+    .flex-shrink-1 {
+        flex-shrink: 1 !important;
+    }
+    .wrap-anywhere {
+        overflow-wrap: anywhere;
+    }
+    .right-floating-buttonbox {
+        float: right;
+        display: flex;
+        margin: 1rem -0.5rem;
+        button {
+            margin: 0 0.5rem;
+        }
+    }
+    .left-floating-box {
+        float: left;
+        margin: 1rem 0;
+    }
+
+    [class*='col'] {
+        padding: 0 calc(#{$col-spacing} / 2);
+    }
+
+    .fullheight-flex-col {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-row {
+        margin: 0 0 calc(#{$row-input-spacing} - 2rem) 0;
+        &.no-margin {
+            margin: 0;
+        }
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+        div.invalid-feedback {
+            margin: 0;
+            bottom: 0;
+        }
+
+        fieldset {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            border: 0.063rem solid rgb(206, 212, 218); //var(--secondary);
+            box-sizing: border-box;
+            border-radius: 0.25rem;
+            background: var(--white);
+
+            input {
+                margin-top: 0.625rem;
+                margin-bottom: 1.25rem;
+            }
+            button {
+                margin: 1rem 0;
+                width: fit-content;
+                align-self: flex-end;
+            }
+            div.list {
+                height: 100%;
+
+                div.item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-bottom: 0.063rem solid var(--light);
+                    * {
+                        flex-shrink: 0;
+                    }
+                    // .flex-shrink-1 {
+                    //     flex-shrink: 1;
+                    // }
+                    .upload-item-header {
+                        display: flex;
+                        align-items: center;
+                        margin: 0;
+                        div {
+                            margin-left: 0.5rem;
+                        }
+                    }
+                    div {
+                        margin: 0.5rem 0;
+                        line-height: 1.313rem;
+                        &.no-margin {
+                            margin: 0;
+                        }
+                    }
+                    a {
+                        margin: 0.5rem 0;
+                        padding: 0;
+                    }
+
+                    svg {
+                        &:hover.action-icon {
+                            transition: transform 0.2s;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .form-label {
+        white-space: nowrap;
+    }
+    .form-control {
+        &:hover {
+            @extend .form-control;
+        }
+    }
+}

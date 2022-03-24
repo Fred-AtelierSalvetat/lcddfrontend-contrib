@@ -1,0 +1,88 @@
+@import 'bootstrap';
+
+.form-control {
+    &:hover {
+        @extend .form-control;
+    }
+}
+
+@mixin bootstrapize-reactselect-value-container($statusClass: '') {
+    @extend .form-control;
+    @if $statusClass != '' {
+        @extend #{$statusClass};
+    }
+    display: flex;
+    margin: 0.188rem 0;
+    padding: 0 2.25rem 0 0.75rem;
+    height: auto;
+    //min-height: calc(1.5rem + 0.75rem - 0.125rem);
+    cursor: pointer;
+    border: none;
+    .css-b8ldur-Input {
+        padding: 0;
+        margin: 0;
+    }
+    &:hover {
+        box-shadow: none;
+    }
+    .select__multi-value {
+        background-color: hsl(0, 0%, 90%);
+        border-radius: 1.25rem;
+
+        .select__multi-value__label {
+            padding-left: 0.5rem;
+            padding-right: 0rem;
+            color: var(--gray-dark);
+        }
+        .select__multi-value__remove {
+            background-color: unset;
+            svg {
+                fill: hsl(0, 0%, 40%);
+                &:hover {
+                    fill: hsl(0, 0%, 20%);
+                }
+            }
+        }
+    }
+}
+
+@mixin bootstrapize-reactselect-control($statusClass: '') {
+    @extend .form-control;
+    @if $statusClass != '' {
+        @extend #{$statusClass};
+    }
+    display: flex;
+    padding: 0;
+    background-image: none;
+    cursor: pointer;
+    height: auto;
+
+    &--is-focused {
+        @extend .form-control;
+        @if $statusClass != '' {
+            @extend #{$statusClass};
+        }
+    }
+}
+
+.select {
+    height: auto;
+    .select__value-container {
+        @include bootstrapize-reactselect-value-container();
+    }
+    .select-valid__value-container {
+        @include bootstrapize-reactselect-value-container('.is-valid');
+    }
+    .select-invalid__value-container {
+        @include bootstrapize-reactselect-value-container('.is-invalid');
+    }
+    .select__control {
+        @include bootstrapize-reactselect-control();
+    }
+    .select-valid__control {
+        @include bootstrapize-reactselect-control('.is-valid');
+    }
+    .select-invalid__control {
+        @include bootstrapize-reactselect-control('.is-invalid');
+    }
+}

@@ -1,0 +1,38 @@
+.alertBox {
+    margin: 3px 0;
+    height: 50px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
+    .alert {
+        padding: 0.5rem 0;
+        margin-bottom: 0.5rem;
+        .JSXalertMsg {
+            height: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+                padding: 0 1rem;
+            }
+            button {
+                &.retry {
+                    margin: 0.25rem 0;
+                    padding: 0.25px 0.5rem;
+                }
+            }
+        }
+        button {
+            &.close {
+                padding: 0.5rem 1rem;
+            }
+        }
+        &.alert-danger {
+            background-color: var(--danger) !important;
+        }
+        &.alert-success {
+            background-color: var(--success) !important;
+        }
+    }
+}

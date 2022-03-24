@@ -1,0 +1,58 @@
+.loader,
+.loader:before,
+.loader:after {
+    border-radius: 50%;
+    width: 0.25rem;
+    height: 0.25rem;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: load7 1.8s infinite ease-in-out;
+    animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+    display: inline-block;
+    color: black;
+    font-size: 10px;
+    margin: 0 0.75rem;
+    position: relative;
+    text-indent: -9999rem;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+    content: '';
+    position: absolute;
+    top: 0;
+}
+.loader:before {
+    left: -0.5rem;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+.loader:after {
+    left: 0.5rem;
+}
+@-webkit-keyframes load7 {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 0.5rem 0 -0.25rem;
+    }
+    40% {
+        box-shadow: 0 0.5rem 0 0;
+    }
+}
+@keyframes load7 {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 0.5rem 0 -0.25rem;
+    }
+    40% {
+        box-shadow: 0 0.5rem 0 0;
+    }
+}

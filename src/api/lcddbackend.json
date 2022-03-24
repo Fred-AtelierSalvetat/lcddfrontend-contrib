@@ -1,0 +1,385 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Lcdd API",
+        "description": "A simple django based backend intended to be used as stub. It serves API, persists data, serves static and media ressources.",
+        "termsOfService": "https://www.google.com/policies/terms/",
+        "contact": { "email": "frederic.salvetat.developper@gmail.com" },
+        "license": { "name": "BSD License" },
+        "version": "v1"
+    },
+    "host": "django-env.eba-bkqvym6c.eu-west-3.elasticbeanstalk.com",
+    "schemes": ["http"],
+    "basePath": "/api",
+    "consumes": ["application/json"],
+    "produces": ["application/json"],
+    "securityDefinitions": { "Basic": { "type": "basic" } },
+    "security": [{ "Basic": [] }],
+    "paths": {
+        "/professions/": {
+            "get": {
+                "operationId": "professions_list",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": { "type": "array", "items": { "$ref": "#/definitions/Profession" } }
+                    }
+                },
+                "tags": ["professions"]
+            },
+            "parameters": []
+        },
+        "/refsLegifrance/": {
+            "get": {
+                "operationId": "refsLegifrance_list",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": { "type": "array", "items": { "$ref": "#/definitions/RefLegifrance" } }
+                    }
+                },
+                "tags": ["refsLegifrance"]
+            },
+            "parameters": []
+        },
+        "/refsLegifrance/{id}/": {
+            "get": {
+                "operationId": "refsLegifrance_read",
+                "description": "",
+                "parameters": [],
+                "responses": { "200": { "description": "", "schema": { "$ref": "#/definitions/RefLegifrance" } } },
+                "tags": ["refsLegifrance"]
+            },
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "description": "A unique integer value identifying this ref legifrance.",
+                    "required": true,
+                    "type": "integer"
+                }
+            ]
+        },
+        "/topics/": {
+            "get": {
+                "operationId": "topics_list",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": { "type": "array", "items": { "$ref": "#/definitions/Topic" } }
+                    }
+                },
+                "tags": ["topics"]
+            },
+            "parameters": []
+        },
+        "/users/": {
+            "get": {
+                "operationId": "users_list",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "lcdd_role",
+                        "in": "query",
+                        "description": "Filter the returned list by lcdd_role, multiple values are handles as OR : filter1 OR filter2",
+                        "required": false,
+                        "type": "string",
+                        "enum": [
+                            "SPEAKER_AWAITING_ANSWER",
+                            "SPEAKER_AWAITING_VALIDATION",
+                            "SPEAKER",
+                            "PROFESSIONAL",
+                            "STUDENT",
+                            "CITIZEN",
+                            "ADMIN"
+                        ]
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": { "type": "array", "items": { "$ref": "#/definitions/UserProfile" } }
+                    }
+                },
+                "tags": ["users"]
+            },
+            "post": {
+                "operationId": "users_create",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "data",
+                        "in": "body",
+                        "required": true,
+                        "schema": { "$ref": "#/definitions/UserProfile" }
+                    }
+                ],
+                "responses": { "201": { "description": "", "schema": { "$ref": "#/definitions/UserProfile" } } },
+                "tags": ["users"]
+            },
+            "parameters": []
+        },
+        "/users/{id}/": {
+            "get": {
+                "operationId": "users_read",
+                "description": "",
+                "parameters": [],
+                "responses": { "200": { "description": "", "schema": { "$ref": "#/definitions/UserProfile" } } },
+                "tags": ["users"]
+            },
+            "put": {
+                "operationId": "users_update",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "data",
+                        "in": "body",
+                        "required": true,
+                        "schema": { "$ref": "#/definitions/UserProfile" }
+                    }
+                ],
+                "responses": { "200": { "description": "", "schema": { "$ref": "#/definitions/UserProfile" } } },
+                "tags": ["users"]
+            },
+            "patch": {
+                "operationId": "users_partial_update",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "data",
+                        "in": "body",
+                        "required": true,
+                        "schema": { "$ref": "#/definitions/UserProfile" }
+                    }
+                ],
+                "responses": { "200": { "description": "", "schema": { "$ref": "#/definitions/UserProfile" } } },
+                "tags": ["users"]
+            },
+            "delete": {
+                "operationId": "users_delete",
+                "description": "",
+                "parameters": [],
+                "responses": { "204": { "description": "" } },
+                "tags": ["users"]
+            },
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "description": "A unique integer value identifying this user profile.",
+                    "required": true,
+                    "type": "integer"
+                }
+            ]
+        },
+        "/workshops/": {
+            "get": {
+                "operationId": "workshops_list",
+                "description": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": { "type": "array", "items": { "$ref": "#/definitions/Workshop" } }
+                    }
+                },
+                "tags": ["workshops"]
+            },
+            "post": {
+                "operationId": "workshops_create",
+                "description": "",
+                "parameters": [
+                    { "name": "data", "in": "body", "required": true, "schema": { "$ref": "#/definitions/Workshop" } }
+                ],
+                "responses": { "201": { "description": "", "schema": { "$ref": "#/definitions/Workshop" } } },
+                "tags": ["workshops"]
+            },
+            "parameters": []
+        },
+        "/workshops/{id}/": {
+            "get": {
+                "operationId": "workshops_read",
+                "description": "",
+                "parameters": [],
+                "responses": { "200": { "description": "", "schema": { "$ref": "#/definitions/Workshop" } } },
+                "tags": ["workshops"]
+            },
+            "put": {
+                "operationId": "workshops_update",
+                "description": "",
+                "parameters": [
+                    { "name": "data", "in": "body", "required": true, "schema": { "$ref": "#/definitions/Workshop" } }
+                ],
+                "responses": { "200": { "description": "", "schema": { "$ref": "#/definitions/Workshop" } } },
+                "tags": ["workshops"]
+            },
+            "patch": {
+                "operationId": "workshops_partial_update",
+                "description": "",
+                "parameters": [
+                    { "name": "data", "in": "body", "required": true, "schema": { "$ref": "#/definitions/Workshop" } }
+                ],
+                "responses": { "200": { "description": "", "schema": { "$ref": "#/definitions/Workshop" } } },
+                "tags": ["workshops"]
+            },
+            "delete": {
+                "operationId": "workshops_delete",
+                "description": "",
+                "parameters": [],
+                "responses": { "204": { "description": "" } },
+                "tags": ["workshops"]
+            },
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "description": "A unique integer value identifying this workshop.",
+                    "required": true,
+                    "type": "integer"
+                }
+            ]
+        }
+    },
+    "definitions": {
+        "Profession": {
+            "required": ["profession"],
+            "type": "object",
+            "properties": {
+                "id": { "title": "ID", "type": "integer", "readOnly": true },
+                "profession": { "title": "Profession", "type": "string", "maxLength": 64, "minLength": 1 }
+            }
+        },
+        "RefLegifrance": {
+            "required": ["ref"],
+            "type": "object",
+            "properties": {
+                "id": { "title": "ID", "type": "integer", "readOnly": true },
+                "ref": { "title": "Ref", "type": "string", "maxLength": 32, "minLength": 1 }
+            }
+        },
+        "Topic": {
+            "required": ["title"],
+            "type": "object",
+            "properties": {
+                "id": { "title": "ID", "type": "integer", "readOnly": true },
+                "thumbnail": { "title": "Thumbnail", "type": "string", "readOnly": true },
+                "title": { "title": "Title", "type": "string", "maxLength": 100, "minLength": 1 }
+            }
+        },
+        "Group": {
+            "required": ["name"],
+            "type": "object",
+            "properties": {
+                "id": { "title": "ID", "type": "integer", "readOnly": true },
+                "name": { "title": "Name", "type": "string", "maxLength": 150, "minLength": 1 }
+            }
+        },
+        "User": {
+            "required": ["groups"],
+            "type": "object",
+            "properties": {
+                "id": { "title": "ID", "type": "integer", "readOnly": true },
+                "first_name": { "title": "First name", "type": "string", "maxLength": 150 },
+                "last_name": { "title": "Last name", "type": "string", "maxLength": 150 },
+                "email": { "title": "Email address", "type": "string", "format": "email", "maxLength": 254 },
+                "is_active": {
+                    "title": "Active",
+                    "description": "Designates whether this user should be treated as active. Unselect this instead of deleting accounts.",
+                    "type": "boolean"
+                },
+                "groups": { "type": "array", "items": { "$ref": "#/definitions/Group" } }
+            }
+        },
+        "UserProfile": {
+            "required": ["user"],
+            "type": "object",
+            "properties": {
+                "user": { "$ref": "#/definitions/User" },
+                "lcdd_role": {
+                    "title": "Lcdd role",
+                    "type": "string",
+                    "enum": [
+                        "SPEAKER_AWAITING_ANSWER",
+                        "SPEAKER_AWAITING_VALIDATION",
+                        "SPEAKER",
+                        "PROFESSIONAL",
+                        "STUDENT",
+                        "CITIZEN",
+                        "ADMIN"
+                    ]
+                },
+                "city": { "title": "City", "type": "string", "maxLength": 100, "minLength": 1 },
+                "interests": {
+                    "type": "array",
+                    "items": {
+                        "required": ["title", "thumbnail"],
+                        "type": "object",
+                        "properties": {
+                            "id": { "title": "ID", "type": "integer", "readOnly": true },
+                            "title": { "title": "Title", "type": "string", "maxLength": 100, "minLength": 1 },
+                            "thumbnail": { "title": "Thumbnail", "type": "string", "maxLength": 255, "minLength": 1 }
+                        }
+                    },
+                    "readOnly": true
+                }
+            }
+        },
+        "Keyword": {
+            "required": ["keyword", "workshop"],
+            "type": "object",
+            "properties": {
+                "id": { "title": "ID", "type": "integer", "readOnly": true },
+                "keyword": { "title": "Keyword", "type": "string", "maxLength": 32, "minLength": 1 },
+                "workshop": { "title": "Workshop", "type": "integer" }
+            }
+        },
+        "Workshop": {
+            "required": ["title", "startingdate", "description"],
+            "type": "object",
+            "properties": {
+                "status": {
+                    "title": "Status",
+                    "type": "string",
+                    "enum": ["INCOMING", "LIVE", "UNPUBLISHED", "PUBLISHED", "ARCHIVED"]
+                },
+                "thumbnailUrl": { "title": "ThumbnailUrl", "type": "string", "maxLength": 255 },
+                "videoUrl": { "title": "VideoUrl", "type": "string", "maxLength": 255 },
+                "title": { "title": "Title", "type": "string", "maxLength": 127, "minLength": 1 },
+                "startingdate": { "title": "Startingdate", "type": "string", "format": "date-time" },
+                "topics": {
+                    "type": "array",
+                    "items": {
+                        "required": ["title", "thumbnail"],
+                        "type": "object",
+                        "properties": {
+                            "id": { "title": "ID", "type": "integer", "readOnly": true },
+                            "title": { "title": "Title", "type": "string", "maxLength": 100, "minLength": 1 },
+                            "thumbnail": { "title": "Thumbnail", "type": "string", "maxLength": 255, "minLength": 1 }
+                        }
+                    },
+                    "readOnly": true
+                },
+                "description": { "title": "Description", "type": "string", "minLength": 1 },
+                "refsLegifrance": {
+                    "type": "array",
+                    "items": {
+                        "required": ["ref"],
+                        "type": "object",
+                        "properties": {
+                            "id": { "title": "ID", "type": "integer", "readOnly": true },
+                            "ref": { "title": "Ref", "type": "string", "maxLength": 32, "minLength": 1 }
+                        }
+                    },
+                    "readOnly": true
+                },
+                "keywords": { "type": "array", "items": { "$ref": "#/definitions/Keyword" }, "readOnly": true }
+            }
+        }
+    }
+}

@@ -1,0 +1,122 @@
+.App {
+	/* declaration of global variables */
+	--min-height-header: 82px;
+	--min-height-footer: 81px;
+
+	text-align: center;
+	min-width: 360px;
+
+	.intervenir {
+		max-width: 450px;
+		width: 100%;
+	}
+
+	.lcdd-body-bg {
+		background-image: url("./../assets/home/question.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top;
+		background-attachment: fixed;
+		min-height: 100vh;
+		margin-bottom: 0;
+	}
+
+	.container-login {
+		width: 464px !important;
+		background-color: white;
+	}
+
+	.FC-btn,
+	.FC-btn-email {
+		display: flex !important;
+		align-items: center;
+		padding: 0 16px !important;
+	}
+
+	.FC-btn:hover {
+		background-color: var(--white) !important;
+		color: var(--fc) !important;
+		text-decoration: underline !important;
+		--shadow: 0 10px 6px -6px #777;
+		box-shadow: var(--shadow);
+	}
+
+	.FC-text,
+	.FC-text-email {
+		padding-left: 45px;
+		font-weight: 350 !important;
+		font-size: 20px !important;
+		text-align: left;
+	}
+
+	.FC-text {
+		color: var(--fc) !important;
+	}
+
+	.FC-text-email {
+		color: #F2F2F2 !important;
+	}
+
+	.FC-text-bold {
+		font-weight: 400 !important;
+	}
+
+	.invalid-feedback {
+		// display: block !important;
+		//position: absolute;
+		//width: auto;
+		color: var(--red) !important;
+	}
+
+	.input-group {
+		position: relative;
+
+		.form-control {
+			padding-right: 42px;
+			border-radius: 0.25rem !important;
+
+		}
+
+		.form-control.is-invalid {
+			background-image: none;
+		}
+
+		i {
+			position: absolute;
+			right: 10px;
+			top: 15%;
+			z-index: 10;
+		}
+
+	}
+
+	.form-control.is-invalid {
+		border-color: var(--red) !important;
+	}
+
+	.primary {
+		color: var(--primary);
+	}
+
+	#lcdd-body {
+		padding-top: var(--min-height-header);
+	}
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-top: 40px;
+		padding-bottom: 32px;
+		background: #FFF6EF;
+		box-shadow: 0px 1px 3px rgba(17, 63, 89, 0.25);
+	}
+
+	.jumbotron {
+		background-color: #f3edd3 !important;
+		padding: 0px !important;
+	}
+
+
+}

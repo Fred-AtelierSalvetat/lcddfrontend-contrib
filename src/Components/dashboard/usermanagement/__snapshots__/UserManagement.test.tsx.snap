@@ -1,0 +1,2565 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserManagement />  should match its reference snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <MemoryRouter
+    initialEntries={
+      Array [
+        "/users",
+      ]
+    }
+    keyLength={0}
+  >
+    <Router
+      history={
+        Object {
+          "action": "REPLACE",
+          "block": [Function],
+          "canGo": [Function],
+          "createHref": [Function],
+          "entries": Array [
+            Object {
+              "hash": "",
+              "pathname": "/users",
+              "search": "?tab=admin",
+              "state": undefined,
+            },
+          ],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "index": 0,
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/users",
+            "search": "?tab=admin",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <Route
+        path={
+          Array [
+            "/users",
+          ]
+        }
+      >
+        <UserManagement>
+          <ErrorBoundary>
+            <div
+              className="table_and_filters_pane"
+            >
+              <TabContainer>
+                <Nav
+                  fill={false}
+                  justify={false}
+                  variant="pills"
+                >
+                  <ForwardRef
+                    as="div"
+                    className="nav nav-pills"
+                    onSelect={[Function]}
+                  >
+                    <div
+                      className="nav nav-pills"
+                      onKeyDown={[Function]}
+                      role="tablist"
+                    >
+                      <NavItem
+                        key="tab_Admins"
+                      >
+                        <div
+                          className="nav-item"
+                        >
+                          <NavLink
+                            active={true}
+                            as={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "render": [Function],
+                              }
+                            }
+                            disabled={false}
+                            onClick={[Function]}
+                          >
+                            <ForwardRef
+                              active={true}
+                              as={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "render": [Function],
+                                }
+                              }
+                              className="nav-link"
+                              disabled={false}
+                              onClick={[Function]}
+                            >
+                              <SafeAnchor
+                                aria-selected={true}
+                                className="nav-link active"
+                                data-rb-event-key={null}
+                                disabled={false}
+                                onClick={[Function]}
+                                role="tab"
+                              >
+                                <a
+                                  aria-selected={true}
+                                  className="nav-link active"
+                                  data-rb-event-key={null}
+                                  href="#"
+                                  onClick={[Function]}
+                                  onKeyDown={[Function]}
+                                  role="tab"
+                                >
+                                  Admins
+                                </a>
+                              </SafeAnchor>
+                            </ForwardRef>
+                          </NavLink>
+                        </div>
+                      </NavItem>
+                      <NavItem
+                        key="tab_Intervenants"
+                      >
+                        <div
+                          className="nav-item"
+                        >
+                          <NavLink
+                            active={false}
+                            as={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "render": [Function],
+                              }
+                            }
+                            disabled={false}
+                            onClick={[Function]}
+                          >
+                            <ForwardRef
+                              active={false}
+                              as={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "render": [Function],
+                                }
+                              }
+                              className="nav-link"
+                              disabled={false}
+                              onClick={[Function]}
+                            >
+                              <SafeAnchor
+                                aria-selected={false}
+                                className="nav-link"
+                                data-rb-event-key={null}
+                                disabled={false}
+                                onClick={[Function]}
+                                role="tab"
+                              >
+                                <a
+                                  aria-selected={false}
+                                  className="nav-link"
+                                  data-rb-event-key={null}
+                                  href="#"
+                                  onClick={[Function]}
+                                  onKeyDown={[Function]}
+                                  role="tab"
+                                >
+                                  Intervenants
+                                </a>
+                              </SafeAnchor>
+                            </ForwardRef>
+                          </NavLink>
+                        </div>
+                      </NavItem>
+                      <NavItem
+                        key="tab_Utilisateurs"
+                      >
+                        <div
+                          className="nav-item"
+                        >
+                          <NavLink
+                            active={false}
+                            as={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "render": [Function],
+                              }
+                            }
+                            disabled={false}
+                            onClick={[Function]}
+                          >
+                            <ForwardRef
+                              active={false}
+                              as={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "render": [Function],
+                                }
+                              }
+                              className="nav-link"
+                              disabled={false}
+                              onClick={[Function]}
+                            >
+                              <SafeAnchor
+                                aria-selected={false}
+                                className="nav-link"
+                                data-rb-event-key={null}
+                                disabled={false}
+                                onClick={[Function]}
+                                role="tab"
+                              >
+                                <a
+                                  aria-selected={false}
+                                  className="nav-link"
+                                  data-rb-event-key={null}
+                                  href="#"
+                                  onClick={[Function]}
+                                  onKeyDown={[Function]}
+                                  role="tab"
+                                >
+                                  Utilisateurs
+                                </a>
+                              </SafeAnchor>
+                            </ForwardRef>
+                          </NavLink>
+                        </div>
+                      </NavItem>
+                      <div
+                        className="searchbox-container"
+                      >
+                        <SearchBox
+                          placeholder="Rechercher un utilisateur"
+                          setValue={[Function]}
+                          value=""
+                        >
+                          <div
+                            className="searchbox"
+                          >
+                            <input
+                              aria-label="Rechercher un utilisateur"
+                              onChange={[Function]}
+                              placeholder="Rechercher un utilisateur"
+                              type="text"
+                              value=""
+                            />
+                            <ForwardRef(SvgSearch)
+                              onClick={[Function]}
+                            >
+                              <svg
+                                onClick={[Function]}
+                              >
+                                search.svg
+                              </svg>
+                            </ForwardRef(SvgSearch)>
+                          </div>
+                        </SearchBox>
+                      </div>
+                    </div>
+                  </ForwardRef>
+                </Nav>
+                <ForwardRef>
+                  <div
+                    className="tab-content"
+                  >
+                    <TabPane
+                      active={true}
+                      key="pane_Admins"
+                    >
+                      <Fade
+                        appear={false}
+                        in={true}
+                        mountOnEnter={false}
+                        timeout={300}
+                        unmountOnExit={false}
+                      >
+                        <Transition
+                          addEndListener={[Function]}
+                          appear={false}
+                          enter={true}
+                          exit={true}
+                          in={true}
+                          mountOnEnter={false}
+                          onEnter={[Function]}
+                          onEntered={[Function]}
+                          onEntering={[Function]}
+                          onExit={[Function]}
+                          onExited={[Function]}
+                          onExiting={[Function]}
+                          timeout={300}
+                          unmountOnExit={false}
+                        >
+                          <div
+                            aria-hidden={false}
+                            aria-labelledby={null}
+                            className="fade tab-pane active show"
+                            id={null}
+                            role="tabpanel"
+                          >
+                            <ForwardRef
+                              borderless={true}
+                              role="table"
+                            >
+                              <table
+                                className="table table-borderless"
+                                role="table"
+                              >
+                                <thead
+                                  role="rowgroup"
+                                >
+                                  <tr
+                                    role="row"
+                                  >
+                                    <th
+                                      key="Adminslastname"
+                                      role="heading"
+                                    >
+                                      <div>
+                                        Nom
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Adminsfirstname"
+                                      role="heading"
+                                    >
+                                      <div>
+                                        Prénom
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Adminsphone"
+                                      role="heading"
+                                    >
+                                      <div>
+                                        Téléphone
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Adminsemail_pro"
+                                      role="heading"
+                                    >
+                                      <div>
+                                        E-mail Pro
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Adminsemail"
+                                      role="heading"
+                                    >
+                                      <div>
+                                        E-mail Perso
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Adminstown"
+                                      role="heading"
+                                    >
+                                      <div>
+                                        Ville
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Adminsstatus"
+                                      role="heading"
+                                    >
+                                      <div
+                                        className="CenteredHeader"
+                                      >
+                                        Status
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Adminsactions"
+                                      role="heading"
+                                    >
+                                      <div
+                                        className="CenteredHeader"
+                                      >
+                                        Actions
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Adminsprofile"
+                                      role="heading"
+                                    >
+                                      <div />
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody
+                                  role="rowgroup"
+                                >
+                                  <tr
+                                    data-testid={4}
+                                    key="Admins4"
+                                    role="row"
+                                  >
+                                    <td
+                                      key="Admins4lastname"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        ROOT
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Admins4firstname"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        Admin
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Admins4phone"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        987654321
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Admins4email_pro"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        admin@root.com
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Admins4email"
+                                      role="cell"
+                                    >
+                                      <p />
+                                    </td>
+                                    <td
+                                      key="Admins4town"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        @
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Admins4status"
+                                      role="cell"
+                                    >
+                                      <div
+                                        className="userStatus"
+                                      >
+                                        <ForwardRef(SvgToggleOn24Px)
+                                          onClick={[Function]}
+                                        >
+                                          <svg
+                                            onClick={[Function]}
+                                          >
+                                            toggle_on_24px.svg
+                                          </svg>
+                                        </ForwardRef(SvgToggleOn24Px)>
+                                      </div>
+                                    </td>
+                                    <td
+                                      key="Admins4actions"
+                                      role="cell"
+                                    >
+                                      <ActionMenuPopover
+                                        icon={
+                                          <ForwardRef(SvgMoreHoriz24Px)
+                                            title="openUserActionMenu"
+                                          />
+                                        }
+                                        placement="bottom-end"
+                                      >
+                                        <OverlayTrigger
+                                          defaultShow={false}
+                                          overlay={
+                                            <ForwardRef
+                                              id="ActionMenuPopover"
+                                              placement="right"
+                                            >
+                                              <ForwardRef>
+                                                <Action
+                                                  action={[Function]}
+                                                  icon={<ForwardRef(SvgSettingsBackupRestore24Px) />}
+                                                  label="Revenir intervenant"
+                                                />
+                                                <Action
+                                                  icon={<ForwardRef(SvgDeleteForever16Px) />}
+                                                  label="Supprimer"
+                                                  modalConfirmation={
+                                                    <ConfirmDialog
+                                                      body="Cette action n’est pas réversible."
+                                                      cancelButton="Annuler"
+                                                      handleClose={[Function]}
+                                                      handleConfirm={[Function]}
+                                                      okButton="Supprimer"
+                                                      show={true}
+                                                      title="Supprimer cet utilisateur"
+                                                    />
+                                                  }
+                                                />
+                                              </ForwardRef>
+                                            </ForwardRef>
+                                          }
+                                          placement="bottom-end"
+                                          rootClose={true}
+                                          trigger="click"
+                                        >
+                                          <RefHolder>
+                                            <div
+                                              className="ActionMenuIcon"
+                                              onClick={[Function]}
+                                            >
+                                              <ForwardRef(SvgMoreHoriz24Px)
+                                                title="openUserActionMenu"
+                                              >
+                                                <svg
+                                                  title="openUserActionMenu"
+                                                >
+                                                  more_horiz_24px.svg
+                                                </svg>
+                                              </ForwardRef(SvgMoreHoriz24Px)>
+                                            </div>
+                                          </RefHolder>
+                                          <Overlay
+                                            flip={false}
+                                            onHide={[Function]}
+                                            placement="bottom-end"
+                                            popperConfig={Object {}}
+                                            rootClose={true}
+                                            show={false}
+                                            target={[Function]}
+                                            transition={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "defaultProps": Object {
+                                                  "appear": false,
+                                                  "in": false,
+                                                  "mountOnEnter": false,
+                                                  "timeout": 300,
+                                                  "unmountOnExit": false,
+                                                },
+                                                "render": [Function],
+                                              }
+                                            }
+                                          >
+                                            <Overlay
+                                              flip={false}
+                                              onHide={[Function]}
+                                              placement="bottom-end"
+                                              popperConfig={
+                                                Object {
+                                                  "modifiers": Array [
+                                                    Object {
+                                                      "name": "offset",
+                                                      "options": Object {
+                                                        "offset": [Function],
+                                                      },
+                                                    },
+                                                    Object {
+                                                      "effect": [Function],
+                                                      "enabled": true,
+                                                      "name": "popoverArrowMargins",
+                                                      "phase": "main",
+                                                      "requiresIfExists": Array [
+                                                        "arrow",
+                                                      ],
+                                                    },
+                                                  ],
+                                                }
+                                              }
+                                              rootClose={true}
+                                              show={false}
+                                              target={[Function]}
+                                              transition={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "defaultProps": Object {
+                                                    "appear": false,
+                                                    "in": false,
+                                                    "mountOnEnter": false,
+                                                    "timeout": 300,
+                                                    "unmountOnExit": false,
+                                                  },
+                                                  "render": [Function],
+                                                }
+                                              }
+                                            />
+                                          </Overlay>
+                                        </OverlayTrigger>
+                                      </ActionMenuPopover>
+                                    </td>
+                                    <td
+                                      key="Admins4profile"
+                                      role="cell"
+                                    >
+                                      <Link
+                                        to="/profile/4"
+                                      >
+                                        <LinkAnchor
+                                          href="/profile/4"
+                                          navigate={[Function]}
+                                        >
+                                          <a
+                                            href="/profile/4"
+                                            onClick={[Function]}
+                                          >
+                                            Voir profil
+                                          </a>
+                                        </LinkAnchor>
+                                      </Link>
+                                    </td>
+                                  </tr>
+                                  <tr
+                                    data-testid={24}
+                                    key="Admins24"
+                                    role="row"
+                                  >
+                                    <td
+                                      key="Admins24lastname"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        ROOT
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Admins24firstname"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        Admin2
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Admins24phone"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        987654321
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Admins24email_pro"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        admin@root.com
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Admins24email"
+                                      role="cell"
+                                    >
+                                      <p />
+                                    </td>
+                                    <td
+                                      key="Admins24town"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        @
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Admins24status"
+                                      role="cell"
+                                    >
+                                      <div
+                                        className="userStatus"
+                                      >
+                                        <ForwardRef(SvgToggleOn24Px)
+                                          onClick={[Function]}
+                                        >
+                                          <svg
+                                            onClick={[Function]}
+                                          >
+                                            toggle_on_24px.svg
+                                          </svg>
+                                        </ForwardRef(SvgToggleOn24Px)>
+                                      </div>
+                                    </td>
+                                    <td
+                                      key="Admins24actions"
+                                      role="cell"
+                                    >
+                                      <ActionMenuPopover
+                                        icon={
+                                          <ForwardRef(SvgMoreHoriz24Px)
+                                            title="openUserActionMenu"
+                                          />
+                                        }
+                                        placement="bottom-end"
+                                      >
+                                        <OverlayTrigger
+                                          defaultShow={false}
+                                          overlay={
+                                            <ForwardRef
+                                              id="ActionMenuPopover"
+                                              placement="right"
+                                            >
+                                              <ForwardRef>
+                                                <Action
+                                                  action={[Function]}
+                                                  icon={<ForwardRef(SvgSettingsBackupRestore24Px) />}
+                                                  label="Revenir intervenant"
+                                                />
+                                                <Action
+                                                  icon={<ForwardRef(SvgDeleteForever16Px) />}
+                                                  label="Supprimer"
+                                                  modalConfirmation={
+                                                    <ConfirmDialog
+                                                      body="Cette action n’est pas réversible."
+                                                      cancelButton="Annuler"
+                                                      handleClose={[Function]}
+                                                      handleConfirm={[Function]}
+                                                      okButton="Supprimer"
+                                                      show={true}
+                                                      title="Supprimer cet utilisateur"
+                                                    />
+                                                  }
+                                                />
+                                              </ForwardRef>
+                                            </ForwardRef>
+                                          }
+                                          placement="bottom-end"
+                                          rootClose={true}
+                                          trigger="click"
+                                        >
+                                          <RefHolder>
+                                            <div
+                                              className="ActionMenuIcon"
+                                              onClick={[Function]}
+                                            >
+                                              <ForwardRef(SvgMoreHoriz24Px)
+                                                title="openUserActionMenu"
+                                              >
+                                                <svg
+                                                  title="openUserActionMenu"
+                                                >
+                                                  more_horiz_24px.svg
+                                                </svg>
+                                              </ForwardRef(SvgMoreHoriz24Px)>
+                                            </div>
+                                          </RefHolder>
+                                          <Overlay
+                                            flip={false}
+                                            onHide={[Function]}
+                                            placement="bottom-end"
+                                            popperConfig={Object {}}
+                                            rootClose={true}
+                                            show={false}
+                                            target={[Function]}
+                                            transition={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "defaultProps": Object {
+                                                  "appear": false,
+                                                  "in": false,
+                                                  "mountOnEnter": false,
+                                                  "timeout": 300,
+                                                  "unmountOnExit": false,
+                                                },
+                                                "render": [Function],
+                                              }
+                                            }
+                                          >
+                                            <Overlay
+                                              flip={false}
+                                              onHide={[Function]}
+                                              placement="bottom-end"
+                                              popperConfig={
+                                                Object {
+                                                  "modifiers": Array [
+                                                    Object {
+                                                      "name": "offset",
+                                                      "options": Object {
+                                                        "offset": [Function],
+                                                      },
+                                                    },
+                                                    Object {
+                                                      "effect": [Function],
+                                                      "enabled": true,
+                                                      "name": "popoverArrowMargins",
+                                                      "phase": "main",
+                                                      "requiresIfExists": Array [
+                                                        "arrow",
+                                                      ],
+                                                    },
+                                                  ],
+                                                }
+                                              }
+                                              rootClose={true}
+                                              show={false}
+                                              target={[Function]}
+                                              transition={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "defaultProps": Object {
+                                                    "appear": false,
+                                                    "in": false,
+                                                    "mountOnEnter": false,
+                                                    "timeout": 300,
+                                                    "unmountOnExit": false,
+                                                  },
+                                                  "render": [Function],
+                                                }
+                                              }
+                                            />
+                                          </Overlay>
+                                        </OverlayTrigger>
+                                      </ActionMenuPopover>
+                                    </td>
+                                    <td
+                                      key="Admins24profile"
+                                      role="cell"
+                                    >
+                                      <Link
+                                        to="/profile/24"
+                                      >
+                                        <LinkAnchor
+                                          href="/profile/24"
+                                          navigate={[Function]}
+                                        >
+                                          <a
+                                            href="/profile/24"
+                                            onClick={[Function]}
+                                          >
+                                            Voir profil
+                                          </a>
+                                        </LinkAnchor>
+                                      </Link>
+                                    </td>
+                                  </tr>
+                                  <tr
+                                    data-testid={34}
+                                    key="Admins34"
+                                    role="row"
+                                  >
+                                    <td
+                                      key="Admins34lastname"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        ROOT
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Admins34firstname"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        Admin3
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Admins34phone"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        987654321
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Admins34email_pro"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        admin@root.com
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Admins34email"
+                                      role="cell"
+                                    >
+                                      <p />
+                                    </td>
+                                    <td
+                                      key="Admins34town"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        @
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Admins34status"
+                                      role="cell"
+                                    >
+                                      <div
+                                        className="userStatus"
+                                      >
+                                        <ForwardRef(SvgToggleOn24Px)
+                                          onClick={[Function]}
+                                        >
+                                          <svg
+                                            onClick={[Function]}
+                                          >
+                                            toggle_on_24px.svg
+                                          </svg>
+                                        </ForwardRef(SvgToggleOn24Px)>
+                                      </div>
+                                    </td>
+                                    <td
+                                      key="Admins34actions"
+                                      role="cell"
+                                    >
+                                      <ActionMenuPopover
+                                        icon={
+                                          <ForwardRef(SvgMoreHoriz24Px)
+                                            title="openUserActionMenu"
+                                          />
+                                        }
+                                        placement="bottom-end"
+                                      >
+                                        <OverlayTrigger
+                                          defaultShow={false}
+                                          overlay={
+                                            <ForwardRef
+                                              id="ActionMenuPopover"
+                                              placement="right"
+                                            >
+                                              <ForwardRef>
+                                                <Action
+                                                  action={[Function]}
+                                                  icon={<ForwardRef(SvgSettingsBackupRestore24Px) />}
+                                                  label="Revenir intervenant"
+                                                />
+                                                <Action
+                                                  icon={<ForwardRef(SvgDeleteForever16Px) />}
+                                                  label="Supprimer"
+                                                  modalConfirmation={
+                                                    <ConfirmDialog
+                                                      body="Cette action n’est pas réversible."
+                                                      cancelButton="Annuler"
+                                                      handleClose={[Function]}
+                                                      handleConfirm={[Function]}
+                                                      okButton="Supprimer"
+                                                      show={true}
+                                                      title="Supprimer cet utilisateur"
+                                                    />
+                                                  }
+                                                />
+                                              </ForwardRef>
+                                            </ForwardRef>
+                                          }
+                                          placement="bottom-end"
+                                          rootClose={true}
+                                          trigger="click"
+                                        >
+                                          <RefHolder>
+                                            <div
+                                              className="ActionMenuIcon"
+                                              onClick={[Function]}
+                                            >
+                                              <ForwardRef(SvgMoreHoriz24Px)
+                                                title="openUserActionMenu"
+                                              >
+                                                <svg
+                                                  title="openUserActionMenu"
+                                                >
+                                                  more_horiz_24px.svg
+                                                </svg>
+                                              </ForwardRef(SvgMoreHoriz24Px)>
+                                            </div>
+                                          </RefHolder>
+                                          <Overlay
+                                            flip={false}
+                                            onHide={[Function]}
+                                            placement="bottom-end"
+                                            popperConfig={Object {}}
+                                            rootClose={true}
+                                            show={false}
+                                            target={[Function]}
+                                            transition={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "defaultProps": Object {
+                                                  "appear": false,
+                                                  "in": false,
+                                                  "mountOnEnter": false,
+                                                  "timeout": 300,
+                                                  "unmountOnExit": false,
+                                                },
+                                                "render": [Function],
+                                              }
+                                            }
+                                          >
+                                            <Overlay
+                                              flip={false}
+                                              onHide={[Function]}
+                                              placement="bottom-end"
+                                              popperConfig={
+                                                Object {
+                                                  "modifiers": Array [
+                                                    Object {
+                                                      "name": "offset",
+                                                      "options": Object {
+                                                        "offset": [Function],
+                                                      },
+                                                    },
+                                                    Object {
+                                                      "effect": [Function],
+                                                      "enabled": true,
+                                                      "name": "popoverArrowMargins",
+                                                      "phase": "main",
+                                                      "requiresIfExists": Array [
+                                                        "arrow",
+                                                      ],
+                                                    },
+                                                  ],
+                                                }
+                                              }
+                                              rootClose={true}
+                                              show={false}
+                                              target={[Function]}
+                                              transition={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "defaultProps": Object {
+                                                    "appear": false,
+                                                    "in": false,
+                                                    "mountOnEnter": false,
+                                                    "timeout": 300,
+                                                    "unmountOnExit": false,
+                                                  },
+                                                  "render": [Function],
+                                                }
+                                              }
+                                            />
+                                          </Overlay>
+                                        </OverlayTrigger>
+                                      </ActionMenuPopover>
+                                    </td>
+                                    <td
+                                      key="Admins34profile"
+                                      role="cell"
+                                    >
+                                      <Link
+                                        to="/profile/34"
+                                      >
+                                        <LinkAnchor
+                                          href="/profile/34"
+                                          navigate={[Function]}
+                                        >
+                                          <a
+                                            href="/profile/34"
+                                            onClick={[Function]}
+                                          >
+                                            Voir profil
+                                          </a>
+                                        </LinkAnchor>
+                                      </Link>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </ForwardRef>
+                          </div>
+                        </Transition>
+                      </Fade>
+                    </TabPane>
+                    <TabPane
+                      active={false}
+                      key="pane_Intervenants"
+                    >
+                      <Fade
+                        appear={false}
+                        in={false}
+                        mountOnEnter={false}
+                        timeout={300}
+                        unmountOnExit={false}
+                      >
+                        <Transition
+                          addEndListener={[Function]}
+                          appear={false}
+                          enter={true}
+                          exit={true}
+                          in={false}
+                          mountOnEnter={false}
+                          onEnter={[Function]}
+                          onEntered={[Function]}
+                          onEntering={[Function]}
+                          onExit={[Function]}
+                          onExited={[Function]}
+                          onExiting={[Function]}
+                          timeout={300}
+                          unmountOnExit={false}
+                        >
+                          <div
+                            aria-hidden={true}
+                            aria-labelledby={null}
+                            className="fade tab-pane"
+                            id={null}
+                            role="tabpanel"
+                          >
+                            <ForwardRef
+                              borderless={true}
+                              role="table"
+                            >
+                              <table
+                                className="table table-borderless"
+                                role="table"
+                              >
+                                <thead
+                                  role="rowgroup"
+                                >
+                                  <tr
+                                    role="row"
+                                  >
+                                    <th
+                                      key="Intervenantslastname"
+                                      role="heading"
+                                    >
+                                      <div>
+                                        Nom
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Intervenantsfirstname"
+                                      role="heading"
+                                    >
+                                      <div>
+                                        Prénom
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Intervenantsphone"
+                                      role="heading"
+                                    >
+                                      <div>
+                                        Téléphone
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Intervenantsemail_pro"
+                                      role="heading"
+                                    >
+                                      <div>
+                                        E-mail Pro
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Intervenantsemail"
+                                      role="heading"
+                                    >
+                                      <div>
+                                        E-mail Perso
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Intervenantstown"
+                                      role="heading"
+                                    >
+                                      <div>
+                                        Ville
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Intervenantsstatus"
+                                      role="heading"
+                                    >
+                                      <div
+                                        className="CenteredHeader"
+                                      >
+                                        Status
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Intervenantsactions"
+                                      role="heading"
+                                    >
+                                      <div
+                                        className="CenteredHeader"
+                                      >
+                                        Actions
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Intervenantsprofile"
+                                      role="heading"
+                                    >
+                                      <div />
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody
+                                  role="rowgroup"
+                                >
+                                  <tr
+                                    data-testid={4}
+                                    key="Intervenants4"
+                                    role="row"
+                                  >
+                                    <td
+                                      key="Intervenants4lastname"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        ROOT
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Intervenants4firstname"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        Admin
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Intervenants4phone"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        987654321
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Intervenants4email_pro"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        admin@root.com
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Intervenants4email"
+                                      role="cell"
+                                    >
+                                      <p />
+                                    </td>
+                                    <td
+                                      key="Intervenants4town"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        @
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Intervenants4status"
+                                      role="cell"
+                                    >
+                                      <div
+                                        className="Centered"
+                                      >
+                                        <div
+                                          className="userStatus"
+                                        >
+                                          <ForwardRef(SvgToggleOn24Px)
+                                            onClick={[Function]}
+                                          >
+                                            <svg
+                                              onClick={[Function]}
+                                            >
+                                              toggle_on_24px.svg
+                                            </svg>
+                                          </ForwardRef(SvgToggleOn24Px)>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td
+                                      key="Intervenants4actions"
+                                      role="cell"
+                                    >
+                                      <ActionMenuPopover
+                                        icon={
+                                          <ForwardRef(SvgMoreHoriz24Px)
+                                            title="openUserActionMenu"
+                                          />
+                                        }
+                                        placement="bottom-end"
+                                      >
+                                        <OverlayTrigger
+                                          defaultShow={false}
+                                          overlay={
+                                            <ForwardRef
+                                              id="ActionMenuPopover"
+                                              placement="right"
+                                            >
+                                              <ForwardRef>
+                                                <Action
+                                                  icon={<ForwardRef(SvgDeleteForever16Px) />}
+                                                  label="Supprimer"
+                                                  modalConfirmation={
+                                                    <ConfirmDialog
+                                                      body="Cette action n’est pas réversible."
+                                                      cancelButton="Annuler"
+                                                      handleClose={[Function]}
+                                                      handleConfirm={[Function]}
+                                                      okButton="Supprimer"
+                                                      show={true}
+                                                      title="Supprimer cet utilisateur"
+                                                    />
+                                                  }
+                                                />
+                                              </ForwardRef>
+                                            </ForwardRef>
+                                          }
+                                          placement="bottom-end"
+                                          rootClose={true}
+                                          trigger="click"
+                                        >
+                                          <RefHolder>
+                                            <div
+                                              className="ActionMenuIcon"
+                                              onClick={[Function]}
+                                            >
+                                              <ForwardRef(SvgMoreHoriz24Px)
+                                                title="openUserActionMenu"
+                                              >
+                                                <svg
+                                                  title="openUserActionMenu"
+                                                >
+                                                  more_horiz_24px.svg
+                                                </svg>
+                                              </ForwardRef(SvgMoreHoriz24Px)>
+                                            </div>
+                                          </RefHolder>
+                                          <Overlay
+                                            flip={false}
+                                            onHide={[Function]}
+                                            placement="bottom-end"
+                                            popperConfig={Object {}}
+                                            rootClose={true}
+                                            show={false}
+                                            target={[Function]}
+                                            transition={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "defaultProps": Object {
+                                                  "appear": false,
+                                                  "in": false,
+                                                  "mountOnEnter": false,
+                                                  "timeout": 300,
+                                                  "unmountOnExit": false,
+                                                },
+                                                "render": [Function],
+                                              }
+                                            }
+                                          >
+                                            <Overlay
+                                              flip={false}
+                                              onHide={[Function]}
+                                              placement="bottom-end"
+                                              popperConfig={
+                                                Object {
+                                                  "modifiers": Array [
+                                                    Object {
+                                                      "name": "offset",
+                                                      "options": Object {
+                                                        "offset": [Function],
+                                                      },
+                                                    },
+                                                    Object {
+                                                      "effect": [Function],
+                                                      "enabled": true,
+                                                      "name": "popoverArrowMargins",
+                                                      "phase": "main",
+                                                      "requiresIfExists": Array [
+                                                        "arrow",
+                                                      ],
+                                                    },
+                                                  ],
+                                                }
+                                              }
+                                              rootClose={true}
+                                              show={false}
+                                              target={[Function]}
+                                              transition={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "defaultProps": Object {
+                                                    "appear": false,
+                                                    "in": false,
+                                                    "mountOnEnter": false,
+                                                    "timeout": 300,
+                                                    "unmountOnExit": false,
+                                                  },
+                                                  "render": [Function],
+                                                }
+                                              }
+                                            />
+                                          </Overlay>
+                                        </OverlayTrigger>
+                                      </ActionMenuPopover>
+                                    </td>
+                                    <td
+                                      key="Intervenants4profile"
+                                      role="cell"
+                                    >
+                                      <Link
+                                        to="/profile/4"
+                                      >
+                                        <LinkAnchor
+                                          href="/profile/4"
+                                          navigate={[Function]}
+                                        >
+                                          <a
+                                            href="/profile/4"
+                                            onClick={[Function]}
+                                          >
+                                            Voir profil
+                                          </a>
+                                        </LinkAnchor>
+                                      </Link>
+                                    </td>
+                                  </tr>
+                                  <tr
+                                    data-testid={24}
+                                    key="Intervenants24"
+                                    role="row"
+                                  >
+                                    <td
+                                      key="Intervenants24lastname"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        ROOT
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Intervenants24firstname"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        Admin2
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Intervenants24phone"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        987654321
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Intervenants24email_pro"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        admin@root.com
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Intervenants24email"
+                                      role="cell"
+                                    >
+                                      <p />
+                                    </td>
+                                    <td
+                                      key="Intervenants24town"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        @
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Intervenants24status"
+                                      role="cell"
+                                    >
+                                      <div
+                                        className="Centered"
+                                      >
+                                        <div
+                                          className="userStatus"
+                                        >
+                                          <ForwardRef(SvgToggleOn24Px)
+                                            onClick={[Function]}
+                                          >
+                                            <svg
+                                              onClick={[Function]}
+                                            >
+                                              toggle_on_24px.svg
+                                            </svg>
+                                          </ForwardRef(SvgToggleOn24Px)>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td
+                                      key="Intervenants24actions"
+                                      role="cell"
+                                    >
+                                      <ActionMenuPopover
+                                        icon={
+                                          <ForwardRef(SvgMoreHoriz24Px)
+                                            title="openUserActionMenu"
+                                          />
+                                        }
+                                        placement="bottom-end"
+                                      >
+                                        <OverlayTrigger
+                                          defaultShow={false}
+                                          overlay={
+                                            <ForwardRef
+                                              id="ActionMenuPopover"
+                                              placement="right"
+                                            >
+                                              <ForwardRef>
+                                                <Action
+                                                  icon={<ForwardRef(SvgDeleteForever16Px) />}
+                                                  label="Supprimer"
+                                                  modalConfirmation={
+                                                    <ConfirmDialog
+                                                      body="Cette action n’est pas réversible."
+                                                      cancelButton="Annuler"
+                                                      handleClose={[Function]}
+                                                      handleConfirm={[Function]}
+                                                      okButton="Supprimer"
+                                                      show={true}
+                                                      title="Supprimer cet utilisateur"
+                                                    />
+                                                  }
+                                                />
+                                              </ForwardRef>
+                                            </ForwardRef>
+                                          }
+                                          placement="bottom-end"
+                                          rootClose={true}
+                                          trigger="click"
+                                        >
+                                          <RefHolder>
+                                            <div
+                                              className="ActionMenuIcon"
+                                              onClick={[Function]}
+                                            >
+                                              <ForwardRef(SvgMoreHoriz24Px)
+                                                title="openUserActionMenu"
+                                              >
+                                                <svg
+                                                  title="openUserActionMenu"
+                                                >
+                                                  more_horiz_24px.svg
+                                                </svg>
+                                              </ForwardRef(SvgMoreHoriz24Px)>
+                                            </div>
+                                          </RefHolder>
+                                          <Overlay
+                                            flip={false}
+                                            onHide={[Function]}
+                                            placement="bottom-end"
+                                            popperConfig={Object {}}
+                                            rootClose={true}
+                                            show={false}
+                                            target={[Function]}
+                                            transition={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "defaultProps": Object {
+                                                  "appear": false,
+                                                  "in": false,
+                                                  "mountOnEnter": false,
+                                                  "timeout": 300,
+                                                  "unmountOnExit": false,
+                                                },
+                                                "render": [Function],
+                                              }
+                                            }
+                                          >
+                                            <Overlay
+                                              flip={false}
+                                              onHide={[Function]}
+                                              placement="bottom-end"
+                                              popperConfig={
+                                                Object {
+                                                  "modifiers": Array [
+                                                    Object {
+                                                      "name": "offset",
+                                                      "options": Object {
+                                                        "offset": [Function],
+                                                      },
+                                                    },
+                                                    Object {
+                                                      "effect": [Function],
+                                                      "enabled": true,
+                                                      "name": "popoverArrowMargins",
+                                                      "phase": "main",
+                                                      "requiresIfExists": Array [
+                                                        "arrow",
+                                                      ],
+                                                    },
+                                                  ],
+                                                }
+                                              }
+                                              rootClose={true}
+                                              show={false}
+                                              target={[Function]}
+                                              transition={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "defaultProps": Object {
+                                                    "appear": false,
+                                                    "in": false,
+                                                    "mountOnEnter": false,
+                                                    "timeout": 300,
+                                                    "unmountOnExit": false,
+                                                  },
+                                                  "render": [Function],
+                                                }
+                                              }
+                                            />
+                                          </Overlay>
+                                        </OverlayTrigger>
+                                      </ActionMenuPopover>
+                                    </td>
+                                    <td
+                                      key="Intervenants24profile"
+                                      role="cell"
+                                    >
+                                      <Link
+                                        to="/profile/24"
+                                      >
+                                        <LinkAnchor
+                                          href="/profile/24"
+                                          navigate={[Function]}
+                                        >
+                                          <a
+                                            href="/profile/24"
+                                            onClick={[Function]}
+                                          >
+                                            Voir profil
+                                          </a>
+                                        </LinkAnchor>
+                                      </Link>
+                                    </td>
+                                  </tr>
+                                  <tr
+                                    data-testid={34}
+                                    key="Intervenants34"
+                                    role="row"
+                                  >
+                                    <td
+                                      key="Intervenants34lastname"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        ROOT
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Intervenants34firstname"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        Admin3
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Intervenants34phone"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        987654321
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Intervenants34email_pro"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        admin@root.com
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Intervenants34email"
+                                      role="cell"
+                                    >
+                                      <p />
+                                    </td>
+                                    <td
+                                      key="Intervenants34town"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        @
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Intervenants34status"
+                                      role="cell"
+                                    >
+                                      <div
+                                        className="Centered"
+                                      >
+                                        <div
+                                          className="userStatus"
+                                        >
+                                          <ForwardRef(SvgToggleOn24Px)
+                                            onClick={[Function]}
+                                          >
+                                            <svg
+                                              onClick={[Function]}
+                                            >
+                                              toggle_on_24px.svg
+                                            </svg>
+                                          </ForwardRef(SvgToggleOn24Px)>
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td
+                                      key="Intervenants34actions"
+                                      role="cell"
+                                    >
+                                      <ActionMenuPopover
+                                        icon={
+                                          <ForwardRef(SvgMoreHoriz24Px)
+                                            title="openUserActionMenu"
+                                          />
+                                        }
+                                        placement="bottom-end"
+                                      >
+                                        <OverlayTrigger
+                                          defaultShow={false}
+                                          overlay={
+                                            <ForwardRef
+                                              id="ActionMenuPopover"
+                                              placement="right"
+                                            >
+                                              <ForwardRef>
+                                                <Action
+                                                  icon={<ForwardRef(SvgDeleteForever16Px) />}
+                                                  label="Supprimer"
+                                                  modalConfirmation={
+                                                    <ConfirmDialog
+                                                      body="Cette action n’est pas réversible."
+                                                      cancelButton="Annuler"
+                                                      handleClose={[Function]}
+                                                      handleConfirm={[Function]}
+                                                      okButton="Supprimer"
+                                                      show={true}
+                                                      title="Supprimer cet utilisateur"
+                                                    />
+                                                  }
+                                                />
+                                              </ForwardRef>
+                                            </ForwardRef>
+                                          }
+                                          placement="bottom-end"
+                                          rootClose={true}
+                                          trigger="click"
+                                        >
+                                          <RefHolder>
+                                            <div
+                                              className="ActionMenuIcon"
+                                              onClick={[Function]}
+                                            >
+                                              <ForwardRef(SvgMoreHoriz24Px)
+                                                title="openUserActionMenu"
+                                              >
+                                                <svg
+                                                  title="openUserActionMenu"
+                                                >
+                                                  more_horiz_24px.svg
+                                                </svg>
+                                              </ForwardRef(SvgMoreHoriz24Px)>
+                                            </div>
+                                          </RefHolder>
+                                          <Overlay
+                                            flip={false}
+                                            onHide={[Function]}
+                                            placement="bottom-end"
+                                            popperConfig={Object {}}
+                                            rootClose={true}
+                                            show={false}
+                                            target={[Function]}
+                                            transition={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "defaultProps": Object {
+                                                  "appear": false,
+                                                  "in": false,
+                                                  "mountOnEnter": false,
+                                                  "timeout": 300,
+                                                  "unmountOnExit": false,
+                                                },
+                                                "render": [Function],
+                                              }
+                                            }
+                                          >
+                                            <Overlay
+                                              flip={false}
+                                              onHide={[Function]}
+                                              placement="bottom-end"
+                                              popperConfig={
+                                                Object {
+                                                  "modifiers": Array [
+                                                    Object {
+                                                      "name": "offset",
+                                                      "options": Object {
+                                                        "offset": [Function],
+                                                      },
+                                                    },
+                                                    Object {
+                                                      "effect": [Function],
+                                                      "enabled": true,
+                                                      "name": "popoverArrowMargins",
+                                                      "phase": "main",
+                                                      "requiresIfExists": Array [
+                                                        "arrow",
+                                                      ],
+                                                    },
+                                                  ],
+                                                }
+                                              }
+                                              rootClose={true}
+                                              show={false}
+                                              target={[Function]}
+                                              transition={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "defaultProps": Object {
+                                                    "appear": false,
+                                                    "in": false,
+                                                    "mountOnEnter": false,
+                                                    "timeout": 300,
+                                                    "unmountOnExit": false,
+                                                  },
+                                                  "render": [Function],
+                                                }
+                                              }
+                                            />
+                                          </Overlay>
+                                        </OverlayTrigger>
+                                      </ActionMenuPopover>
+                                    </td>
+                                    <td
+                                      key="Intervenants34profile"
+                                      role="cell"
+                                    >
+                                      <Link
+                                        to="/profile/34"
+                                      >
+                                        <LinkAnchor
+                                          href="/profile/34"
+                                          navigate={[Function]}
+                                        >
+                                          <a
+                                            href="/profile/34"
+                                            onClick={[Function]}
+                                          >
+                                            Voir profil
+                                          </a>
+                                        </LinkAnchor>
+                                      </Link>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </ForwardRef>
+                          </div>
+                        </Transition>
+                      </Fade>
+                    </TabPane>
+                    <TabPane
+                      active={false}
+                      key="pane_Utilisateurs"
+                    >
+                      <Fade
+                        appear={false}
+                        in={false}
+                        mountOnEnter={false}
+                        timeout={300}
+                        unmountOnExit={false}
+                      >
+                        <Transition
+                          addEndListener={[Function]}
+                          appear={false}
+                          enter={true}
+                          exit={true}
+                          in={false}
+                          mountOnEnter={false}
+                          onEnter={[Function]}
+                          onEntered={[Function]}
+                          onEntering={[Function]}
+                          onExit={[Function]}
+                          onExited={[Function]}
+                          onExiting={[Function]}
+                          timeout={300}
+                          unmountOnExit={false}
+                        >
+                          <div
+                            aria-hidden={true}
+                            aria-labelledby={null}
+                            className="fade tab-pane"
+                            id={null}
+                            role="tabpanel"
+                          >
+                            <ForwardRef
+                              borderless={true}
+                              role="table"
+                            >
+                              <table
+                                className="table table-borderless"
+                                role="table"
+                              >
+                                <thead
+                                  role="rowgroup"
+                                >
+                                  <tr
+                                    role="row"
+                                  >
+                                    <th
+                                      key="Utilisateurslastname"
+                                      role="heading"
+                                    >
+                                      <div>
+                                        Nom
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Utilisateursfirstname"
+                                      role="heading"
+                                    >
+                                      <div>
+                                        Prénom
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Utilisateursemail"
+                                      role="heading"
+                                    >
+                                      <div>
+                                        E-mail
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Utilisateurstown"
+                                      role="heading"
+                                    >
+                                      <div>
+                                        Ville
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Utilisateursrole"
+                                      role="heading"
+                                    >
+                                      <div>
+                                        Rôle
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Utilisateursstatus"
+                                      role="heading"
+                                    >
+                                      <div
+                                        className="CenteredHeader"
+                                      >
+                                        Status
+                                      </div>
+                                    </th>
+                                    <th
+                                      key="Utilisateursactions"
+                                      role="heading"
+                                    >
+                                      <div
+                                        className="CenteredHeader"
+                                      >
+                                        Actions
+                                      </div>
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody
+                                  role="rowgroup"
+                                >
+                                  <tr
+                                    data-testid={4}
+                                    key="Utilisateurs4"
+                                    role="row"
+                                  >
+                                    <td
+                                      key="Utilisateurs4lastname"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        ROOT
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Utilisateurs4firstname"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        Admin
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Utilisateurs4email"
+                                      role="cell"
+                                    >
+                                      <p />
+                                    </td>
+                                    <td
+                                      key="Utilisateurs4town"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        @
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Utilisateurs4role"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        Admin
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Utilisateurs4status"
+                                      role="cell"
+                                    >
+                                      <div
+                                        className="userStatus"
+                                      >
+                                        <ForwardRef(SvgToggleOn24Px)
+                                          onClick={[Function]}
+                                        >
+                                          <svg
+                                            onClick={[Function]}
+                                          >
+                                            toggle_on_24px.svg
+                                          </svg>
+                                        </ForwardRef(SvgToggleOn24Px)>
+                                      </div>
+                                    </td>
+                                    <td
+                                      key="Utilisateurs4actions"
+                                      role="cell"
+                                    >
+                                      <ActionMenuPopover
+                                        icon={
+                                          <ForwardRef(SvgMoreHoriz24Px)
+                                            title="openUserActionMenu"
+                                          />
+                                        }
+                                        placement="bottom-end"
+                                      >
+                                        <OverlayTrigger
+                                          defaultShow={false}
+                                          overlay={
+                                            <ForwardRef
+                                              id="ActionMenuPopover"
+                                              placement="right"
+                                            >
+                                              <ForwardRef>
+                                                <Action
+                                                  icon={<ForwardRef(SvgDeleteForever16Px) />}
+                                                  label="Supprimer"
+                                                  modalConfirmation={
+                                                    <ConfirmDialog
+                                                      body="Cette action n’est pas réversible."
+                                                      cancelButton="Annuler"
+                                                      handleClose={[Function]}
+                                                      handleConfirm={[Function]}
+                                                      okButton="Supprimer"
+                                                      show={true}
+                                                      title="Supprimer cet utilisateur"
+                                                    />
+                                                  }
+                                                />
+                                              </ForwardRef>
+                                            </ForwardRef>
+                                          }
+                                          placement="bottom-end"
+                                          rootClose={true}
+                                          trigger="click"
+                                        >
+                                          <RefHolder>
+                                            <div
+                                              className="ActionMenuIcon"
+                                              onClick={[Function]}
+                                            >
+                                              <ForwardRef(SvgMoreHoriz24Px)
+                                                title="openUserActionMenu"
+                                              >
+                                                <svg
+                                                  title="openUserActionMenu"
+                                                >
+                                                  more_horiz_24px.svg
+                                                </svg>
+                                              </ForwardRef(SvgMoreHoriz24Px)>
+                                            </div>
+                                          </RefHolder>
+                                          <Overlay
+                                            flip={false}
+                                            onHide={[Function]}
+                                            placement="bottom-end"
+                                            popperConfig={Object {}}
+                                            rootClose={true}
+                                            show={false}
+                                            target={[Function]}
+                                            transition={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "defaultProps": Object {
+                                                  "appear": false,
+                                                  "in": false,
+                                                  "mountOnEnter": false,
+                                                  "timeout": 300,
+                                                  "unmountOnExit": false,
+                                                },
+                                                "render": [Function],
+                                              }
+                                            }
+                                          >
+                                            <Overlay
+                                              flip={false}
+                                              onHide={[Function]}
+                                              placement="bottom-end"
+                                              popperConfig={
+                                                Object {
+                                                  "modifiers": Array [
+                                                    Object {
+                                                      "name": "offset",
+                                                      "options": Object {
+                                                        "offset": [Function],
+                                                      },
+                                                    },
+                                                    Object {
+                                                      "effect": [Function],
+                                                      "enabled": true,
+                                                      "name": "popoverArrowMargins",
+                                                      "phase": "main",
+                                                      "requiresIfExists": Array [
+                                                        "arrow",
+                                                      ],
+                                                    },
+                                                  ],
+                                                }
+                                              }
+                                              rootClose={true}
+                                              show={false}
+                                              target={[Function]}
+                                              transition={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "defaultProps": Object {
+                                                    "appear": false,
+                                                    "in": false,
+                                                    "mountOnEnter": false,
+                                                    "timeout": 300,
+                                                    "unmountOnExit": false,
+                                                  },
+                                                  "render": [Function],
+                                                }
+                                              }
+                                            />
+                                          </Overlay>
+                                        </OverlayTrigger>
+                                      </ActionMenuPopover>
+                                    </td>
+                                  </tr>
+                                  <tr
+                                    data-testid={24}
+                                    key="Utilisateurs24"
+                                    role="row"
+                                  >
+                                    <td
+                                      key="Utilisateurs24lastname"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        ROOT
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Utilisateurs24firstname"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        Admin2
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Utilisateurs24email"
+                                      role="cell"
+                                    >
+                                      <p />
+                                    </td>
+                                    <td
+                                      key="Utilisateurs24town"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        @
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Utilisateurs24role"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        Admin
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Utilisateurs24status"
+                                      role="cell"
+                                    >
+                                      <div
+                                        className="userStatus"
+                                      >
+                                        <ForwardRef(SvgToggleOn24Px)
+                                          onClick={[Function]}
+                                        >
+                                          <svg
+                                            onClick={[Function]}
+                                          >
+                                            toggle_on_24px.svg
+                                          </svg>
+                                        </ForwardRef(SvgToggleOn24Px)>
+                                      </div>
+                                    </td>
+                                    <td
+                                      key="Utilisateurs24actions"
+                                      role="cell"
+                                    >
+                                      <ActionMenuPopover
+                                        icon={
+                                          <ForwardRef(SvgMoreHoriz24Px)
+                                            title="openUserActionMenu"
+                                          />
+                                        }
+                                        placement="bottom-end"
+                                      >
+                                        <OverlayTrigger
+                                          defaultShow={false}
+                                          overlay={
+                                            <ForwardRef
+                                              id="ActionMenuPopover"
+                                              placement="right"
+                                            >
+                                              <ForwardRef>
+                                                <Action
+                                                  icon={<ForwardRef(SvgDeleteForever16Px) />}
+                                                  label="Supprimer"
+                                                  modalConfirmation={
+                                                    <ConfirmDialog
+                                                      body="Cette action n’est pas réversible."
+                                                      cancelButton="Annuler"
+                                                      handleClose={[Function]}
+                                                      handleConfirm={[Function]}
+                                                      okButton="Supprimer"
+                                                      show={true}
+                                                      title="Supprimer cet utilisateur"
+                                                    />
+                                                  }
+                                                />
+                                              </ForwardRef>
+                                            </ForwardRef>
+                                          }
+                                          placement="bottom-end"
+                                          rootClose={true}
+                                          trigger="click"
+                                        >
+                                          <RefHolder>
+                                            <div
+                                              className="ActionMenuIcon"
+                                              onClick={[Function]}
+                                            >
+                                              <ForwardRef(SvgMoreHoriz24Px)
+                                                title="openUserActionMenu"
+                                              >
+                                                <svg
+                                                  title="openUserActionMenu"
+                                                >
+                                                  more_horiz_24px.svg
+                                                </svg>
+                                              </ForwardRef(SvgMoreHoriz24Px)>
+                                            </div>
+                                          </RefHolder>
+                                          <Overlay
+                                            flip={false}
+                                            onHide={[Function]}
+                                            placement="bottom-end"
+                                            popperConfig={Object {}}
+                                            rootClose={true}
+                                            show={false}
+                                            target={[Function]}
+                                            transition={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "defaultProps": Object {
+                                                  "appear": false,
+                                                  "in": false,
+                                                  "mountOnEnter": false,
+                                                  "timeout": 300,
+                                                  "unmountOnExit": false,
+                                                },
+                                                "render": [Function],
+                                              }
+                                            }
+                                          >
+                                            <Overlay
+                                              flip={false}
+                                              onHide={[Function]}
+                                              placement="bottom-end"
+                                              popperConfig={
+                                                Object {
+                                                  "modifiers": Array [
+                                                    Object {
+                                                      "name": "offset",
+                                                      "options": Object {
+                                                        "offset": [Function],
+                                                      },
+                                                    },
+                                                    Object {
+                                                      "effect": [Function],
+                                                      "enabled": true,
+                                                      "name": "popoverArrowMargins",
+                                                      "phase": "main",
+                                                      "requiresIfExists": Array [
+                                                        "arrow",
+                                                      ],
+                                                    },
+                                                  ],
+                                                }
+                                              }
+                                              rootClose={true}
+                                              show={false}
+                                              target={[Function]}
+                                              transition={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "defaultProps": Object {
+                                                    "appear": false,
+                                                    "in": false,
+                                                    "mountOnEnter": false,
+                                                    "timeout": 300,
+                                                    "unmountOnExit": false,
+                                                  },
+                                                  "render": [Function],
+                                                }
+                                              }
+                                            />
+                                          </Overlay>
+                                        </OverlayTrigger>
+                                      </ActionMenuPopover>
+                                    </td>
+                                  </tr>
+                                  <tr
+                                    data-testid={34}
+                                    key="Utilisateurs34"
+                                    role="row"
+                                  >
+                                    <td
+                                      key="Utilisateurs34lastname"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        ROOT
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Utilisateurs34firstname"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        Admin3
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Utilisateurs34email"
+                                      role="cell"
+                                    >
+                                      <p />
+                                    </td>
+                                    <td
+                                      key="Utilisateurs34town"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        @
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Utilisateurs34role"
+                                      role="cell"
+                                    >
+                                      <p>
+                                        Admin
+                                      </p>
+                                    </td>
+                                    <td
+                                      key="Utilisateurs34status"
+                                      role="cell"
+                                    >
+                                      <div
+                                        className="userStatus"
+                                      >
+                                        <ForwardRef(SvgToggleOn24Px)
+                                          onClick={[Function]}
+                                        >
+                                          <svg
+                                            onClick={[Function]}
+                                          >
+                                            toggle_on_24px.svg
+                                          </svg>
+                                        </ForwardRef(SvgToggleOn24Px)>
+                                      </div>
+                                    </td>
+                                    <td
+                                      key="Utilisateurs34actions"
+                                      role="cell"
+                                    >
+                                      <ActionMenuPopover
+                                        icon={
+                                          <ForwardRef(SvgMoreHoriz24Px)
+                                            title="openUserActionMenu"
+                                          />
+                                        }
+                                        placement="bottom-end"
+                                      >
+                                        <OverlayTrigger
+                                          defaultShow={false}
+                                          overlay={
+                                            <ForwardRef
+                                              id="ActionMenuPopover"
+                                              placement="right"
+                                            >
+                                              <ForwardRef>
+                                                <Action
+                                                  icon={<ForwardRef(SvgDeleteForever16Px) />}
+                                                  label="Supprimer"
+                                                  modalConfirmation={
+                                                    <ConfirmDialog
+                                                      body="Cette action n’est pas réversible."
+                                                      cancelButton="Annuler"
+                                                      handleClose={[Function]}
+                                                      handleConfirm={[Function]}
+                                                      okButton="Supprimer"
+                                                      show={true}
+                                                      title="Supprimer cet utilisateur"
+                                                    />
+                                                  }
+                                                />
+                                              </ForwardRef>
+                                            </ForwardRef>
+                                          }
+                                          placement="bottom-end"
+                                          rootClose={true}
+                                          trigger="click"
+                                        >
+                                          <RefHolder>
+                                            <div
+                                              className="ActionMenuIcon"
+                                              onClick={[Function]}
+                                            >
+                                              <ForwardRef(SvgMoreHoriz24Px)
+                                                title="openUserActionMenu"
+                                              >
+                                                <svg
+                                                  title="openUserActionMenu"
+                                                >
+                                                  more_horiz_24px.svg
+                                                </svg>
+                                              </ForwardRef(SvgMoreHoriz24Px)>
+                                            </div>
+                                          </RefHolder>
+                                          <Overlay
+                                            flip={false}
+                                            onHide={[Function]}
+                                            placement="bottom-end"
+                                            popperConfig={Object {}}
+                                            rootClose={true}
+                                            show={false}
+                                            target={[Function]}
+                                            transition={
+                                              Object {
+                                                "$$typeof": Symbol(react.forward_ref),
+                                                "defaultProps": Object {
+                                                  "appear": false,
+                                                  "in": false,
+                                                  "mountOnEnter": false,
+                                                  "timeout": 300,
+                                                  "unmountOnExit": false,
+                                                },
+                                                "render": [Function],
+                                              }
+                                            }
+                                          >
+                                            <Overlay
+                                              flip={false}
+                                              onHide={[Function]}
+                                              placement="bottom-end"
+                                              popperConfig={
+                                                Object {
+                                                  "modifiers": Array [
+                                                    Object {
+                                                      "name": "offset",
+                                                      "options": Object {
+                                                        "offset": [Function],
+                                                      },
+                                                    },
+                                                    Object {
+                                                      "effect": [Function],
+                                                      "enabled": true,
+                                                      "name": "popoverArrowMargins",
+                                                      "phase": "main",
+                                                      "requiresIfExists": Array [
+                                                        "arrow",
+                                                      ],
+                                                    },
+                                                  ],
+                                                }
+                                              }
+                                              rootClose={true}
+                                              show={false}
+                                              target={[Function]}
+                                              transition={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "defaultProps": Object {
+                                                    "appear": false,
+                                                    "in": false,
+                                                    "mountOnEnter": false,
+                                                    "timeout": 300,
+                                                    "unmountOnExit": false,
+                                                  },
+                                                  "render": [Function],
+                                                }
+                                              }
+                                            />
+                                          </Overlay>
+                                        </OverlayTrigger>
+                                      </ActionMenuPopover>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </ForwardRef>
+                          </div>
+                        </Transition>
+                      </Fade>
+                    </TabPane>
+                  </div>
+                </ForwardRef>
+              </TabContainer>
+            </div>
+          </ErrorBoundary>
+        </UserManagement>
+      </Route>
+    </Router>
+  </MemoryRouter>
+</Provider>
+`;

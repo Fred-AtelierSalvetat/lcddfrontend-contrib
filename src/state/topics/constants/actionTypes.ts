@@ -1,0 +1,5 @@
+export const FETCH_TOPICS_REQUEST = 'FETCH_TOPICS_REQUEST' as const;
+export const FETCH_TOPICS_SUCCESS = 'FETCH_TOPICS_SUCCESS' as const;
+export const FETCH_TOPICS_FAILURE = 'FETCH_TOPICS_FAILURE' as const;
+
+export type TopicActionType = typeof FETCH_TOPICS_REQUEST | typeof FETCH_TOPICS_SUCCESS | typeof FETCH_TOPICS_FAILURE;

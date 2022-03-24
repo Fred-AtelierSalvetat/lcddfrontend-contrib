@@ -1,0 +1,160 @@
+$line-separator-color: #eceeef;
+$headers-color: #eceeef;
+$header-background-color: #f2f2f2;
+$input-border-color: #cccccc;
+$input-place-holder-color: #999999;
+$awaiting-validation-background-color: #f0ad4e;
+
+#lcdd-dashboard-page {
+    .table_and_filters_pane {
+        background-color: $header-background-color;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+        //width: fit-content;
+        min-width: 100%;
+        filter: drop-shadow(0 0.25rem 0.5rem rgba(130, 130, 130, 0.5));
+        .nav {
+            padding: 0.5rem;
+
+            .nav-link {
+                text-decoration: none;
+                transition: transform 0.2s;
+                padding: 0.5rem;
+                color: var(--primary);
+                background-color: transparent;
+                &:hover {
+                    transform: scale(1.1);
+                }
+                &.nav-link.active {
+                    color: var(--white);
+                    background-color: var(--primary);
+                    &:hover {
+                        transform: none;
+                    }
+                }
+            }
+            .searchbox-container {
+                width: calc(100vw - 160px);
+                position: relative;
+                align-self: bottom;
+
+                @media (min-width: 769px) {
+                    margin-left: auto;
+                    min-width: 200px;
+                    width: 400px;
+                    align-self: top;
+                }
+            }
+        }
+
+        .tab-content {
+            background-color: var(--white);
+            margin-bottom: 7px;
+            .tab-pane {
+                height: calc(100vh - 200px);
+                min-height: 97px;
+                overflow: auto;
+            }
+            thead {
+                tr {
+                    th {
+                        position: sticky;
+                        top: 0;
+                        z-index: 10;
+                        background-color: var(--gray-dark);
+                        color: $headers-color;
+                        padding: 0.75rem 1rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 1, 5rem;
+                        letter-spacing: 0;
+                        text-align: left;
+                        vertical-align: middle;
+                        white-space: nowrap;
+                        > .CenteredHeader {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    border-top: 1px solid $line-separator-color;
+                    td {
+                        z-index: 9;
+                        padding: 0.75rem 1rem;
+                        background-color: var(--white);
+                        .Centered {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            .speakerStatus {
+                                color: var(--white);
+                                border-radius: 20px;
+
+                                height: 20px;
+                                width: 68px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin: 4px 0 6px 0;
+                                &.speakerAwaitingAnswer {
+                                    background-color: var(--cyan);
+                                }
+                                &.speakerAwaitingValidation {
+                                    background-color: $awaiting-validation-background-color;
+                                }
+                                p {
+                                    margin: 0;
+                                    line-height: 22px;
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    letter-spacing: 0px;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+
+                        > p {
+                            margin: 0;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 1.5rem;
+                            letter-spacing: 0px;
+                            text-align: left;
+                            vertical-align: middle;
+                            white-space: nowrap;
+                        }
+                        > a {
+                            font-size: small;
+                            font-weight: 400;
+                            font-style: normal;
+                            white-space: nowrap;
+                            color: var(--link);
+                        }
+                        .userStatus {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            > svg {
+                                cursor: pointer;
+
+                                &:hover {
+                                    transform: scale(1.1);
+                                }
+                                #toggle_on_24px {
+                                    fill: var(--success);
+                                }
+                                #toggle_off_24px {
+                                    fill: var(--danger);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

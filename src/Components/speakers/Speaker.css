@@ -1,0 +1,32 @@
+.speaker-image {
+    border: 2px solid #0b2534;
+    box-sizing: border-box;
+    border-radius: 50%;
+    filter: grayscale();
+    width: 263px;
+    height: 263px;
+}
+
+.speaker-image:hover {
+    cursor: pointer;
+    border: 3px solid #0b2534;
+    zoom: 115%;
+    filter: none;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+@media only screen and (max-width: 991px) {
+    .speaker-image {
+        border: 2px solid #0b2534;
+        box-sizing: border-box;
+        border-radius: 50%;
+        filter: grayscale();
+        width: 288px;
+        height: 288px;
+    }
+}
+@media only screen and (max-width: 767px) {
+}

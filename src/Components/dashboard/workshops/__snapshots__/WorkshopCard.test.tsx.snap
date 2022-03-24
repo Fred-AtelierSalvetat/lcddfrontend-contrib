@@ -1,0 +1,249 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WorkshopChard />  should match its reference snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <WorkshopCard
+    workshop={
+      Object {
+        "description": "WorkshopDescriptionString",
+        "files": Array [],
+        "id": "0",
+        "keywords": Array [],
+        "links": Array [],
+        "refsLegifrance": Array [],
+        "speakers": "",
+        "startingdate": 2021-07-20T10:34:56.000Z,
+        "status": "A venir",
+        "thumbnail": "",
+        "title": "Le droit et le dev",
+        "topics": Array [
+          "TopicA",
+          "TopicB",
+        ],
+        "video": "",
+      }
+    }
+  >
+    <Card
+      body={false}
+      className="card"
+    >
+      <div
+        className="card card"
+      >
+        <div
+          className="image-container"
+        >
+          <CardImgOverlay>
+            <div
+              className="card-img-overlay"
+            >
+              <div
+                className="status incoming"
+              >
+                A venir
+              </div>
+              <div
+                className="actionMenuContainer"
+              >
+                <ActionMenuPopover
+                  icon={
+                    <ForwardRef(SvgMoreVert24Px)
+                      title="Actions"
+                    />
+                  }
+                  placement="bottom-end"
+                >
+                  <OverlayTrigger
+                    defaultShow={false}
+                    overlay={
+                      <ForwardRef
+                        id="ActionMenuPopover"
+                        placement="right"
+                      >
+                        <ForwardRef>
+                          <React.Fragment>
+                            <Action
+                              icon={<ForwardRef(SvgCancel24Px) />}
+                              label="Annuler"
+                              modalConfirmation={
+                                <ConfirmDialog
+                                  body="Cette action n’est pas réversible."
+                                  cancelButton="Annuler"
+                                  handleClose={[Function]}
+                                  handleConfirm={[Function]}
+                                  okButton="Annuler l'atelier"
+                                  show={true}
+                                  title="Annuler cet atelier"
+                                />
+                              }
+                            />
+                            <Action
+                              action={[Function]}
+                              icon={<ForwardRef(SvgVideocam24Px) />}
+                              label="GO LIVE"
+                            />
+                          </React.Fragment>
+                        </ForwardRef>
+                      </ForwardRef>
+                    }
+                    placement="bottom-end"
+                    rootClose={true}
+                    trigger="click"
+                  >
+                    <RefHolder>
+                      <div
+                        className="ActionMenuIcon"
+                        onClick={[Function]}
+                      >
+                        <ForwardRef(SvgMoreVert24Px)
+                          title="Actions"
+                        >
+                          <svg
+                            title="Actions"
+                          >
+                            more_vert_24px.svg
+                          </svg>
+                        </ForwardRef(SvgMoreVert24Px)>
+                      </div>
+                    </RefHolder>
+                    <Overlay
+                      flip={false}
+                      onHide={[Function]}
+                      placement="bottom-end"
+                      popperConfig={Object {}}
+                      rootClose={true}
+                      show={false}
+                      target={[Function]}
+                      transition={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "defaultProps": Object {
+                            "appear": false,
+                            "in": false,
+                            "mountOnEnter": false,
+                            "timeout": 300,
+                            "unmountOnExit": false,
+                          },
+                          "render": [Function],
+                        }
+                      }
+                    >
+                      <Overlay
+                        flip={false}
+                        onHide={[Function]}
+                        placement="bottom-end"
+                        popperConfig={
+                          Object {
+                            "modifiers": Array [
+                              Object {
+                                "name": "offset",
+                                "options": Object {
+                                  "offset": [Function],
+                                },
+                              },
+                              Object {
+                                "effect": [Function],
+                                "enabled": true,
+                                "name": "popoverArrowMargins",
+                                "phase": "main",
+                                "requiresIfExists": Array [
+                                  "arrow",
+                                ],
+                              },
+                            ],
+                          }
+                        }
+                        rootClose={true}
+                        show={false}
+                        target={[Function]}
+                        transition={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "defaultProps": Object {
+                              "appear": false,
+                              "in": false,
+                              "mountOnEnter": false,
+                              "timeout": 300,
+                              "unmountOnExit": false,
+                            },
+                            "render": [Function],
+                          }
+                        }
+                      />
+                    </Overlay>
+                  </OverlayTrigger>
+                </ActionMenuPopover>
+              </div>
+              <ForwardRef(SvgEdit24Px)
+                className="editIcon"
+                onClick={[Function]}
+                title="Modifier"
+              >
+                <svg
+                  className="editIcon"
+                  onClick={[Function]}
+                  title="Modifier"
+                >
+                  edit_24px.svg
+                </svg>
+              </ForwardRef(SvgEdit24Px)>
+              <div
+                className="startingdate"
+              >
+                20 juillet 2021 12:34
+              </div>
+            </div>
+          </CardImgOverlay>
+        </div>
+        <CardBody>
+          <div
+            className="card-body"
+          >
+            <CardTitle>
+              <ForwardRef
+                className="card-title"
+              >
+                <div
+                  className="card-title h5"
+                >
+                  Le droit et le dev
+                </div>
+              </ForwardRef>
+            </CardTitle>
+            <CardText
+              className="topics"
+            >
+              <p
+                className="topics card-text"
+              >
+                TopicA, TopicB
+              </p>
+            </CardText>
+            <CardText
+              className="description"
+            >
+              <p
+                className="description card-text"
+              >
+                WorkshopDescriptionString
+              </p>
+            </CardText>
+          </div>
+        </CardBody>
+      </div>
+    </Card>
+  </WorkshopCard>
+</Provider>
+`;

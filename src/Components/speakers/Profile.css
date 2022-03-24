@@ -1,0 +1,278 @@
+.text_h1,
+.text_h2,
+.text_h3 {
+    font-family: Segoe UI;
+    font-weight: 350;
+    color: #333333;
+}
+
+.text_h1 {
+    font-style: normal;
+    font-size: 32px;
+    line-height: 33px;
+}
+
+.text_h2 {
+    font-style: normal;
+    font-size: 28px;
+    line-height: 26px;
+}
+
+.text_h3 {
+    font-style: italic;
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: #fff6ef;
+}
+
+.text_h4,
+.text_h5 {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 28px;
+    line-height: 26px;
+    /* identical to box height, or 93% */
+    position: absolute;
+    height: 26px;
+    color: #113f59;
+}
+
+.text_h4 {
+    text-align: center;
+    width: 42.51px;
+}
+
+.text_h5 {
+    width: 143px;
+}
+
+.text_h6 {
+    position: absolute;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    text-align: left;
+}
+
+.bioWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    .head_text {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 150px;
+        text-align: center;
+    }
+
+    .text_h1,
+    .text_h2,
+    .text_h3 {
+        width: 100%;
+        margin: auto;
+    }
+
+    .text_h1 {
+        height: 33px;
+    }
+
+    .text_h2 {
+        height: 26px;
+    }
+
+    .text_h3 {
+        height: 52px;
+    }
+
+    .photo {
+        position: absolute;
+        top: 283px;
+    }
+
+    .wrapper {
+        height: 343px;
+    }
+
+    .text_h4,
+    .text_h5 {
+        left: 15px;
+    }
+
+    .text_h4 {
+        top: 570px;
+    }
+
+    .text_h5 {
+        top: 916px;
+    }
+
+    .text_h6 {
+        height: 240px;
+        left: 15px;
+        top: 620px;
+        margin-right: 15px;
+    }
+
+    .cardWrapper {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 140px;
+    }
+
+    .bioWrapper {
+        margin: 220px;
+    }
+}
+
+/* tablet */
+@media (min-width: 768px) {
+    .head_text {
+        margin-left: 300px;
+        margin-right: 25px;
+        text-align: center;
+    }
+
+    .text_h1,
+    .text_h2,
+    .text_h3 {
+        width: 100%;
+        margin: auto;
+    }
+
+    .text_h1 {
+        height: 33px;
+        top: 114px;
+    }
+
+    .text_h2 {
+        height: 26px;
+        top: 163px;
+    }
+
+    .text_h3 {
+        height: 52px;
+        top: 205px;
+    }
+
+    .photo {
+        position: absolute;
+        left: 25px;
+        top: 112px;
+    }
+
+    .wrapper {
+        height: 205px;
+    }
+
+    .text_h4,
+    .text_h5 {
+        left: 25px;
+    }
+
+    .text_h4 {
+        top: 439px;
+    }
+
+    .text_h5 {
+        top: 641px;
+    }
+
+    .text_h6 {
+        height: 120px;
+        left: 25px;
+        top: 489px;
+        margin-right: 25px;
+    }
+
+    .cardWrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 140px;
+    }
+
+    .bioWrapper {
+        margin: 150px;
+    }
+}
+
+/* desktop */
+@media (min-width: 992px) {
+    .text_h1,
+    .text_h2,
+    .text_h3 {
+        left: 464px;
+        position: absolute;
+    }
+
+    .text_h1 {
+        width: 273px;
+        height: 33px;
+        top: 138px;
+    }
+
+    .text_h2 {
+        width: 76px;
+        height: 26px;
+        top: 187px;
+    }
+
+    .text_h3 {
+        width: 448px;
+        height: 26px;
+        top: 229px;
+    }
+
+    .photo {
+        position: absolute;
+        left: 150px;
+        top: 136px;
+    }
+
+    .wrapper {
+        height: 205px;
+    }
+
+    .text_h4,
+    .text_h5 {
+        left: 150px;
+    }
+
+    .text_h4 {
+        top: 439px;
+    }
+
+    .text_h5 {
+        top: 641px;
+    }
+
+    .text_h6 {
+        height: 72px;
+        left: 150px;
+        top: 489px;
+        margin-right: 150px;
+    }
+
+    .cardWrapper {
+        margin-left: 140px;
+        margin-right: 140px;
+        margin-bottom: 140px;
+    }
+
+    .bioWrapper {
+        margin: 150px;
+    }
+}

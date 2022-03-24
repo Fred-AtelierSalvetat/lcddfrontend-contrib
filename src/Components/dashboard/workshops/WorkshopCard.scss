@@ -1,0 +1,145 @@
+#workshopsPage {
+    .workshopCard {
+        padding: 0.938rem;
+        .card {
+            .image-container {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                padding-top: 56.25%; // 16:9
+                background-color: rgba(51, 51, 51, 0.4);
+                img {
+                    user-select: none;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    overflow: hidden;
+                }
+                .card-img-overlay {
+                    padding: 0;
+
+                    .status {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        padding: 0.313rem 0.188rem;
+                        box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+                        background: #0b8f98;
+                        border-radius: 0.188rem;
+                        font-weight: bold;
+                        font-size: 0.75rem;
+                        line-height: 0.75rem;
+                        &.incoming {
+                            color: var(--white);
+                            background-color: var(--info);
+                        }
+                        &.live {
+                            color: var(--danger);
+                            background-color: var(--white);
+                            box-sizing: border-box;
+                            padding: 0.188rem 0.063rem;
+                            border: 0.125rem solid var(--danger);
+                        }
+                        &.published {
+                            color: var(--white);
+                            background-color: var(--success);
+                        }
+                        &.unpublished {
+                            color: var(--white);
+                            background-color: var(--orange);
+                        }
+                        &.archived {
+                            color: var(--white);
+                            background-color: var(--danger);
+                        }
+                    }
+                    .actionMenuContainer {
+                        cursor: pointer;
+                        position: absolute;
+                        top: 0.375rem;
+                        right: 0.75rem;
+                        box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+                    }
+                    .editIcon {
+                        cursor: pointer;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        -moz-transform: translateX(-50%) translateY(-50%);
+                        -webkit-transform: translateX(-50%) translateY(-50%);
+                        transform: translateX(-50%) translateY(-50%);
+                        filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+                    }
+
+                    .duration,
+                    .startingdate {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        color: var(--white);
+                        border-radius: 0.063rem 0 0 0;
+                        background-color: rgba(51, 51, 51, 0.5);
+                        font-size: 0.813rem;
+                        line-height: 1.188rem;
+                        padding: 0.125rem 0.25rem;
+                        box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
+                    }
+                }
+            }
+            .card-body {
+                padding: 0.75rem 1rem 1rem 1rem;
+                .card-title.h5 {
+                    $lines-to-show: 2;
+                    $font-size: 1; //in rem
+                    $line-height: 1.5; //in rem
+                    font-size: calc(#{$font-size} * 1rem);
+                    line-height: calc(#{$line-height} * 1rem);
+                    font-style: normal;
+                    font-weight: 600 !important; //Important is bad practice, but it is necessary due to !important on .h5 in index.css :(
+                    letter-spacing: 0;
+                    text-align: left;
+                    height: calc(#{$line-height} * #{$lines-to-show} * 1rem);
+                    display: block; // Fallback for non-webkit
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: $lines-to-show;
+                    overflow: hidden;
+                }
+                .topics.card-text {
+                    color: var(--info);
+                    $lines-to-show: 2;
+                    $font-size: 0.813; //in rem
+                    $line-height: 1.188; //in rem
+                    font-size: calc(#{$font-size} * 1rem);
+                    line-height: calc(#{$line-height} * 1rem);
+                    height: calc(#{$line-height} * #{$lines-to-show} * 1rem);
+                    display: block; // Fallback for non-webkit
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: $lines-to-show;
+                    overflow: hidden;
+                    margin-bottom: 0.5rem;
+                }
+                .description.card-text {
+                    white-space: pre-wrap;
+                    $lines-to-show: 4;
+                    $font-size: 1; //in rem
+                    $line-height: 1.5; //in rem
+                    font-size: calc(#{$font-size} * 1rem);
+                    line-height: calc(#{$line-height} * 1rem);
+                    height: calc(#{$line-height} * #{$lines-to-show} * 1rem);
+                    display: block; // Fallback for non-webkit
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 4;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}

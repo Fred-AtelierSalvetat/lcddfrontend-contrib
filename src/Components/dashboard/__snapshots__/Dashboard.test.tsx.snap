@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dashboard /> should match its reference snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <MemoryRouter
+    initialEntries={
+      Array [
+        Object {
+          "key": "testKey",
+          "pathname": "/dashboard",
+        },
+      ]
+    }
+  >
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "canGo": [Function],
+          "createHref": [Function],
+          "entries": Array [
+            Object {
+              "hash": "",
+              "key": "testKey",
+              "pathname": "/dashboard",
+              "search": "",
+            },
+          ],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "index": 0,
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "key": "testKey",
+            "pathname": "/dashboard",
+            "search": "",
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <Route
+        exact={true}
+        path="/dashboard"
+      >
+        <Dashboard>
+          <ErrorBoundary>
+            <div
+              id="lcdd-dashboard"
+            >
+              <div
+                id="lcdd-dashboard-navbar"
+              >
+                <input
+                  checked={false}
+                  id="/dashboard/workshops"
+                  onChange={[Function]}
+                  type="radio"
+                  value="/dashboard/workshops"
+                />
+                <label
+                  htmlFor="/dashboard/workshops"
+                >
+                  <div>
+                    <ForwardRef(SvgWorkshops24Px)>
+                      <svg>
+                        workshops_24px.svg
+                      </svg>
+                    </ForwardRef(SvgWorkshops24Px)>
+                    <p>
+                      Ateliers
+                    </p>
+                  </div>
+                </label>
+                <input
+                  checked={false}
+                  id="/dashboard/newWorkshop"
+                  onChange={[Function]}
+                  type="radio"
+                  value="/dashboard/newWorkshop"
+                />
+                <label
+                  htmlFor="/dashboard/newWorkshop"
+                >
+                  <div>
+                    <ForwardRef(SvgAdd24Px)>
+                      <svg>
+                        add_24px.svg
+                      </svg>
+                    </ForwardRef(SvgAdd24Px)>
+                    <p>
+                      Créer
+                      <br />
+                      un atelier
+                    </p>
+                  </div>
+                </label>
+                <input
+                  checked={false}
+                  id="/dashboard/users"
+                  onChange={[Function]}
+                  type="radio"
+                  value="/dashboard/users"
+                />
+                <label
+                  htmlFor="/dashboard/users"
+                >
+                  <div>
+                    <ForwardRef(SvgUsers24Px)>
+                      <svg>
+                        users_24px.svg
+                      </svg>
+                    </ForwardRef(SvgUsers24Px)>
+                    <p>
+                      Gestion
+                      <br />
+                      utilisateurs
+                    </p>
+                  </div>
+                </label>
+                <div
+                  className="selection-sliding-background"
+                />
+              </div>
+              <div
+                id="lcdd-dashboard-page"
+              >
+                <AlertNotificationBox>
+                  <div
+                    className="alertBox"
+                  />
+                </AlertNotificationBox>
+                <Switch>
+                  <Route
+                    computedMatch={
+                      Object {
+                        "isExact": true,
+                        "params": Object {},
+                        "path": "/dashboard",
+                        "url": "/dashboard",
+                      }
+                    }
+                    exact={true}
+                    location={
+                      Object {
+                        "hash": "",
+                        "key": "testKey",
+                        "pathname": "/dashboard",
+                        "search": "",
+                      }
+                    }
+                    path="/dashboard"
+                    strict={true}
+                  />
+                </Switch>
+              </div>
+            </div>
+          </ErrorBoundary>
+        </Dashboard>
+      </Route>
+    </Router>
+  </MemoryRouter>
+  ,
+</Provider>
+`;
